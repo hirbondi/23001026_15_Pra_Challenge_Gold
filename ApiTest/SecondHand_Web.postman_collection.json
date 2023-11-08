@@ -1,0 +1,3222 @@
+{
+	"info": {
+		"_postman_id": "f5533b11-e4ab-409f-a837-51dfb25a9112",
+		"name": "SecondHand Web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20446769",
+		"_collection_link": "https://www.postman.com/aerospace-meteorologist-56048387/workspace/binarqae15-muhammad-hirbondi-pradana/collection/20446769-f5533b11-e4ab-409f-a837-51dfb25a9112?action=share&source=collection_link&creator=20446769"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"userName\", resp.user.name);\r",
+							"pm.environment.set(\"userEmail\", resp.user.email);\r",
+							"pm.environment.set(\"userId\", resp.user.id);\r",
+							"pm.environment.set(\"accessToken\", resp.session.token);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Generate a random name\r",
+							"function generateRandomName() {\r",
+							"    const firstNames = [\"John\", \"Alice\", \"Bob\", \"Emma\", \"David\",\"Jhony\"]; // Add more first names as needed\r",
+							"    const lastNames = [\"Smith\", \"Johnson\", \"Doe\", \"Brown\", \"Wilson\"]; // Add more last names as needed\r",
+							"    const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)];\r",
+							"    const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];\r",
+							"    return `${randomFirstName} ${randomLastName}`;\r",
+							"}\r",
+							"const randomName = generateRandomName();\r",
+							"// Store the random name in an environment variable\r",
+							"pm.environment.set('userName', randomName);\r",
+							"\r",
+							"// Generate a random email address\r",
+							"function generateRandomEmail() {\r",
+							"    const username = Math.random().toString(36).substring(2, 12); // Generate a random username\r",
+							"    const domain = 'example.com'; // Replace 'example.com' with your desired domain\r",
+							"    return `${username}@${domain}`;\r",
+							"}\r",
+							"const randomEmail = generateRandomEmail();\r",
+							"// Store the random email in an environment variable\r",
+							"pm.environment.set('userEmail', randomEmail);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"name\": \"{{userName}}\",\r\n    \"email\": \"{{userEmail}}\",\r\n    \"password\": \"{{userPassword}}\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/users.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"name\": \"{{userName}}\",\r\n    \"email\": \"{{userEmail}}\",\r\n    \"password\": \"{{userPassword}}\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 02:03:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4NzQ1NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY5OTMyMjU4MSwiZXhwIjoxNzAwNTMyMTgxLCJqdGkiOiIyNzIzNGU2MS1mZjMxLTQwYmMtYTRjOS04YmZkYjU1Y2ZhNmMifQ.aXRUY2stcUonc1OjIsp1GRyOQB4o0jHNe5MWb70Fac4"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e7077e61cdacfa9febf435858a3824d6\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=PHGsVMlt8x7EUoq%2FyqQll8CRLF%2BV%2BoNKXF91hypHmrF6LdDhrBnJzpuO%2B65GGvJHgvbtCplAJ%2FtoyDZfRx4f8lEjYoaCMppvE%2ByG4Ouh6%2BdIkTOvvD342mcVNRy1RfY0DvpOQ9qG2Piwhh4WK%2BHQ%2BxpWFrrgsOXDCVVUmvMKmg%2FB6HPyAgWhj64bxKLm767dSmi6hU%2FRGvMWvIgD5zd6CggYId5FSC0%2BJQtGy9nNOfoLez7iwRFTTrX8EcAOGtpcAStSjDwcqHduf%2FFFsM9Sm1ej9CKsr17RiZPidvzpXLFtmcEAZVgY%2BgIvxuE7wEiuNRmkmU9B9oXkiRyfoGC5HxGQbzinQQ6v3Rpo1Mtv%2FHvXYZ6PrvY1m9SdDNfKF2Y5AgHEvFVSeVBwL1kr5uHWD%2FuzUlc2EfP4S3tVPxza9ynL85rpQT%2FIZxBBP1o%3D--%2BsyIvDnGZIf1rRx2--DomAPaKoZBKEyFMq8GE%2Bdw%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "64c9081e-198e-4cee-bab3-1c8413f82bce"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.287580"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 87454,\n        \"name\": \"Emma Johnson\",\n        \"email\": \"u32jkkvh2m@example.com\",\n        \"phone_number\": null,\n        \"address\": null\n    },\n    \"session\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4NzQ1NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY5OTMyMjU4MSwiZXhwIjoxNzAwNTMyMTgxLCJqdGkiOiIyNzIzNGU2MS1mZjMxLTQwYmMtYTRjOS04YmZkYjU1Y2ZhNmMifQ.aXRUY2stcUonc1OjIsp1GRyOQB4o0jHNe5MWb70Fac4\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Sign In",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"accessToken\", resp.session.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"email\": \"{{userEmail}}\",\r\n    \"password\": \"{{userPassword}}\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/users/sign_in.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"sign_in.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Sign In",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"{{userEmail}}\",\r\n    \"password\": \"{{userPassword}}\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/sign_in.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"sign_in.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 02:03:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4NzQ1NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY5OTMyMjYyNiwiZXhwIjoxNzAwNTMyMjI2LCJqdGkiOiJhYmMzNzgyMy1kMTc1LTQ0MDAtOTMzOS0wODkzMTc0ODRhYTUifQ.wsc19XkkJU0jfcJLVdO9CPfSdclpRVWOuT4KsQ3qIGo"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6b6a94305be8b5ee1778f33c76d58e52\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=Ctgi46xi1E6aejnftTmX4yfuMyxkb3tasPMO49qhsH5INBMVdr3uqWln71NtoD%2BEly3HPH7mEpIODfeep11i2NQwgKNOwTD5i6iQTQHLEn9k4%2FH0FTOpTqjUJLgH9NjCMluIAoV1q8alQLLUObzJXeeBygaGxG2qAa5MFb8BDVOQ1fl3%2BRJX%2BWV2w%2F%2BMacDzircsmBEL4STypbEhdcqFx3rVkCe4QzUu86sZdPyqm6eAazxqAxMoLORApB6a%2FSMK%2FmXjUyNb6ylG%2FFnnw0NDtUfKVnB8XEMfn3qRaqSpXzeKye0MayWGYyYYI1Ghhbl9qlnsnPyxFq6q5HjwgnAiRRrCj2XDJURZJAbFcs0eHZPVmqSAZnPSnvAV8LfDUkD%2BZVzpwl67KYNuVNdXstHzDViT9Q49gPGUL1bcce3GWdefmw7b6n0VQ4Tod4c%3D--Vqrd%2FJIPONbGJU0P--gvgCS%2BgzzcTQZ5O2tcOROQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9fa75059-6ae1-4903-b9b0-6c5c7ea521eb"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.008357"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 87454,\n        \"name\": \"Emma Johnson\",\n        \"email\": \"u32jkkvh2m@example.com\",\n        \"phone_number\": null,\n        \"address\": null\n    },\n    \"session\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4NzQ1NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY5OTMyMjYyNiwiZXhwIjoxNzAwNTMyMjI2LCJqdGkiOiJhYmMzNzgyMy1kMTc1LTQ0MDAtOTMzOS0wODkzMTc0ODRhYTUifQ.wsc19XkkJU0jfcJLVdO9CPfSdclpRVWOuT4KsQ3qIGo\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Profile",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Generate a random name\r",
+							"function generateRandomName() {\r",
+							"    const firstNames = [\"John\", \"Alice\", \"Bob\", \"Emma\", \"David\",\"Jhony\"]; // Add more first names as needed\r",
+							"    const lastNames = [\"Smith\", \"Johnson\", \"Doe\", \"Brown\", \"Wilson\"]; // Add more last names as needed\r",
+							"    const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)];\r",
+							"    const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];\r",
+							"    return `${randomFirstName} ${randomLastName}`;\r",
+							"}\r",
+							"const randomName = generateRandomName();\r",
+							"// Store the random name in an environment variable\r",
+							"pm.environment.set('randName', randomName);\r",
+							"\r",
+							"// Generate a random email address\r",
+							"function generateRandomEmail() {\r",
+							"    const username = Math.random().toString(36).substring(2, 12); // Generate a random username\r",
+							"    const domain = 'example.com'; // Replace 'example.com' with your desired domain\r",
+							"    return `${username}@${domain}`;\r",
+							"}\r",
+							"const randomEmail = generateRandomEmail();\r",
+							"// Store the random email in an environment variable\r",
+							"pm.environment.set('randEmail', randomEmail);\r",
+							"\r",
+							"// Generate a random-looking Indonesian phone number\r",
+							"function generateRandomIndonesianPhoneNumber() {\r",
+							"    const prefixOptions = [\"0811\", \"0812\", \"0813\", \"0821\", \"0822\", \"0823\", \"0851\", \"0852\", \"0853\", \"0814\", \"0815\", \"0816\", \"0855\"];\r",
+							"    const selectedPrefix = prefixOptions[Math.floor(Math.random() * prefixOptions.length)];\r",
+							"    const remainingDigits = Math.floor(Math.random() * 1000000000).toString().padStart(9, '0');\r",
+							"    return selectedPrefix + remainingDigits;\r",
+							"}\r",
+							"const randomIndonesianPhoneNumber = generateRandomIndonesianPhoneNumber();\r",
+							"// Store the random Indonesian phone number in an environment variable\r",
+							"pm.environment.set('randPhoneNum', randomIndonesianPhoneNumber);\r",
+							"\r",
+							"// Generate a random-looking Indonesian address\r",
+							"function generateRandomIndonesianAddress() {\r",
+							"    const streets = [\"Jalan Merdeka\", \"Jalan Pahlawan\", \"Jalan Raya\", \"Jalan Cendrawasih\", \"Jalan Budi Utomo\", \"Jalan Diponegoro\"];\r",
+							"    const cities = [\"Jakarta\", \"Surabaya\", \"Bandung\", \"Yogyakarta\", \"Medan\", \"Semarang\"];\r",
+							"    const provinces = [\"Jakarta\", \"East Java\", \"West Java\", \"Yogyakarta\", \"North Sumatra\", \"Central Java\"];\r",
+							"    \r",
+							"    const randomStreet = streets[Math.floor(Math.random() * streets.length)];\r",
+							"    const randomCity = cities[Math.floor(Math.random() * cities.length)];\r",
+							"    const randomProvince = provinces[Math.floor(Math.random() * provinces.length)];\r",
+							"    \r",
+							"    return `${randomStreet}, ${randomCity}, ${randomProvince}`;\r",
+							"}\r",
+							"const randomIndonesianAddress = generateRandomIndonesianAddress();\r",
+							"// Store the random Indonesian address in an environment variable\r",
+							"pm.environment.set('randAddress', randomIndonesianAddress);\r",
+							"// Extract the city from the generated address\r",
+							"const city = randomIndonesianAddress.split(', ')[1];\r",
+							"// Store the extracted city in an environment variable\r",
+							"pm.environment.set('randCity', city);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"userName\", resp.user.name);\r",
+							"pm.environment.set(\"userEmail\", resp.user.email);\r",
+							"pm.environment.set(\"userId\", resp.user.id);\r",
+							"pm.environment.set(\"userPhoneNum\", resp.user.phone_number);\r",
+							"pm.environment.set(\"userAddress\", resp.user.address);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user[name]",
+							"value": "{{randName}}",
+							"type": "text"
+						},
+						{
+							"key": "user[phone_number]",
+							"value": "{{randPhoneNum}}",
+							"type": "text"
+						},
+						{
+							"key": "user[address]",
+							"value": "{{randAddress}}",
+							"type": "text"
+						},
+						{
+							"key": "user[city_id]",
+							"value": "25",
+							"type": "text"
+						},
+						{
+							"key": "user[avatar]",
+							"type": "file",
+							"src": "/C:/Users/mpradana/OneDrive - Itron/Pictures/Screenshot 2021-07-05 133107.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/profiles.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"profiles.json"
+					],
+					"query": [
+						{
+							"key": "avatar",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Update Profile",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user[name]",
+									"value": "{{randName}}",
+									"type": "text"
+								},
+								{
+									"key": "user[phone_number]",
+									"value": "{{randPhoneNum}}",
+									"type": "text"
+								},
+								{
+									"key": "user[address]",
+									"value": "{{randAddress}}",
+									"type": "text"
+								},
+								{
+									"key": "user[city_id]",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "user[avatar]",
+									"type": "file",
+									"src": "/C:/Users/mpradana/OneDrive - Itron/Pictures/Screenshot 2021-07-05 133107.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/profiles.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profiles.json"
+							],
+							"query": [
+								{
+									"key": "avatar",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 01:30:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bd663e8b517e7c135057598cf2eabdb7\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=qJXV%2FtaX3AUo2rXUtZHhFdT4KzHoYm36JDboaFgYB91Myshg8gDRde%2FZ%2FR4CCTkFeTOBq5y%2FvRpX83dcRnZ4tpQZO%2BXPyncke5AR9EwXjcjG7EQCPjaXxdwOFe36ooNjUSUxe2oTPV7%2FB9JXCoDisPXmz9wT8hzvJzsEMkORYZKfC6OZKGPdxmXuEBwb6ouLw8%2FJOqki3rFOXrNvzHKFDSItvf7MM7hatmXSDsvO22C4lNGvWQOmMWiprljv%2FIFPizHqiwSAaRWOFIx%2FQncyQwmcQz245dQyjYliOewRKbKl3sq94BS8jBU2H0ZNo3z09YREWCcLZzIkU0wXP2nfDsA0JfEDPoniKovuwJ63Q3NXbq6CUzS8uON9AT3znwQIm4SJvOg8gbeUS0c6fG0zQ6nYXNAM1YV%2BAVoSYScAIAcX%2FWi3L3ftNDtmI7w%3D--lz8sns8LfNA4uE5x--3yy8XNKiKVJ%2BlHRcHQL1Dg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "2e583156-a1b4-4d64-bd5a-90f1779531e0"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "1.279872"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 87507,\n        \"name\": \"Emma Wilson\",\n        \"email\": \"syuj54ak3@example.com\",\n        \"phone_number\": \"0853550622808\",\n        \"address\": \"Jalan Raya, Yogyakarta, Central Java\",\n        \"avatar\": {\n            \"filename\": \"Screenshot 2021-07-05 133107.png\",\n            \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlU3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9cdb5c33d009c501a34804bd96d937501523b675/Screenshot%202021-07-05%20133107.png\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Value check\", function () {\r",
+							"    pm.expect(resp.user.id).to.eql(pm.environment.get(\"userId\"));\r",
+							"    pm.expect(resp.user.name).to.eql(pm.environment.get(\"userName\"));\r",
+							"    pm.expect(resp.user.email).to.eql(pm.environment.get(\"userEmail\"));\r",
+							"    pm.expect(resp.user.phone_number).to.eql(pm.environment.get(\"userPhoneNum\"));\r",
+							"    pm.expect(resp.user.address).to.eql(pm.environment.get(\"userAddress\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/profiles.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"profiles.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Get Profile",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/profiles.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profiles.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 02:19:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"dfb087b72a5e29f51a0bd1ac989b66f1\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=UJ5aaq8xpTsb27B4KI8O1lHnALB7ro9Uk%2B4K8shXEpWh7a79Y9oKMpzUxHDBetXHskvx0GODUtcOY9THpzhRGQWBC%2F359V0NXG83JJYQkenas81kbV99GM7Iluth2M%2BOCbAEfGLbNyMLL%2FfpPRkR6Mo3aTktoKu5rMdIiRpSrstLaT76kVnfL%2FH%2BPY0zh7yuByNjf1kPcoJ0ln3qubtCEg8AGXZyY8qUeNVGuPO%2FuP7C5MfeiPIYemQ8VGBdTDvn8eDU%2FMMYSvwkJ8acKoOz0C2NyCyo6k8fM0EMQ%2BrXPiWJ5syPEZUKSiBsIPm%2FDwGFAEgnewfx0YcTk9%2F3q8dHykOsHxfC5LqmpxwmcyzEW71mGsRGNo%2BtRx%2FiTvWNfMByN0YE37qirnoUW9XdlPwKrpWqN9OA1qpsGhd8IE8GqupgkKz%2BQGU1tf8fhSU%3D--0lc8tdaJm0YRotG4--XVdaRZ50Qz%2Fgof8YklSO9A%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "7b0ef6af-bca9-4aaf-a047-b545bcb2ce85"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.007273"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 87454,\n        \"name\": \"Jhony Smith\",\n        \"email\": \"u32jkkvh2m@example.com\",\n        \"phone_number\": \"0814228339538\",\n        \"address\": \"Jalan Raya, Yogyakarta, East Java\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "List Categories",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/categories.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"categories.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success List Categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/categories.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"categories.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 02:21:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5411b7f44637465231bc27d78e1bb8ca\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "2d50b618-7928-4ffb-b265-380170db6505"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.005680"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"categories\": [\n        {\n            \"id\": 1,\n            \"name\": \"Hobi\",\n            \"url\": \"https://secondhand.binaracademy.org/categories/1\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Kendaraan\",\n            \"url\": \"https://secondhand.binaracademy.org/categories/2\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Baju\",\n            \"url\": \"https://secondhand.binaracademy.org/categories/3\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Elektronik\",\n            \"url\": \"https://secondhand.binaracademy.org/categories/4\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Kesehatan\",\n            \"url\": \"https://secondhand.binaracademy.org/categories/5\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Category",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const minId = 1\r",
+							"const maxId = 5\r",
+							"\r",
+							"const cat = (Math.random() * (maxId - minId) + minId).toFixed(0);\r",
+							"pm.environment.set(\"randCatId\", cat);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check value\", function () {\r",
+							"    var resp = pm.response.json();\r",
+							"    pm.expect(resp.category.id).to.eql(parseInt(pm.environment.get(\"randCatId\")));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/categories/{{randCatId}}.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"categories",
+						"{{randCatId}}.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Get Category",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/categories/{{randCatId}}.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"categories",
+								"{{randCatId}}.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 02:31:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"85b8e1d46837aee21c1c602ac6fe813b\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "3f1e3d4b-58ce-470c-8605-54fbca553c73"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.004985"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"category\": {\n        \"id\": 2,\n        \"name\": \"Kendaraan\",\n        \"url\": \"https://secondhand.binaracademy.org/categories/2\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Product",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const minId = 1\r",
+							"const maxId = 5\r",
+							"\r",
+							"const cat = (Math.random() * (maxId - minId) + minId).toFixed(0);\r",
+							"pm.environment.set(\"randCatId\", cat);\r",
+							"\r",
+							"// Define an array of random IT computer product names\r",
+							"const computerProductNames = [\r",
+							"    \"Laptop\", \"Desktop Computer\", \"Monitor\", \"Keyboard\", \"Mouse\", \"Router\", \"External Hard Drive\",\r",
+							"    \"Webcam\", \"Printer\", \"Scanner\", \"Graphics Card\", \"Motherboard\", \"CPU\", \"RAM\", \"SSD\",\r",
+							"    \"Software License\", \"Tablet\", \"Server\", \"UPS\", \"Network Switch\"\r",
+							"];\r",
+							"// Generate a random IT computer product name\r",
+							"function generateRandomComputerProductName() {\r",
+							"    const randomIndex = Math.floor(Math.random() * computerProductNames.length);\r",
+							"    return computerProductNames[randomIndex];\r",
+							"}\r",
+							"const randomComputerProductName = generateRandomComputerProductName();\r",
+							"// Store the random computer product name in an environment variable\r",
+							"pm.environment.set('randProduct', randomComputerProductName);\r",
+							"\r",
+							"// Define an array of random product descriptions\r",
+							"const productDescriptions = [\r",
+							"    \"High-performance and reliable\",\r",
+							"    \"Sleek and modern design\",\r",
+							"    \"Built to last with top-quality materials\",\r",
+							"    \"Versatile and easy to use\",\r",
+							"    \"Cutting-edge technology for superior performance\",\r",
+							"    \"Ergonomically designed for comfort\",\r",
+							"    \"Enhance your productivity with this product\",\r",
+							"    \"Experience the future of technology\",\r",
+							"    \"Affordable and feature-packed\",\r",
+							"    \"Innovative and stylish\",\r",
+							"    \"Ideal for both personal and professional use\",\r",
+							"    \"Eco-friendly and energy-efficient\",\r",
+							"    \"Seamless connectivity and compatibility\",\r",
+							"    \"Get the job done with ease\",\r",
+							"    \"Upgrade your setup with this exceptional product\",\r",
+							"    \"Stay ahead with the latest in tech\",\r",
+							"];\r",
+							"\r",
+							"// Generate a random product description\r",
+							"function generateRandomProductDescription() {\r",
+							"    const randomIndex = Math.floor(Math.random() * productDescriptions.length);\r",
+							"    return productDescriptions[randomIndex];\r",
+							"}\r",
+							"const randomProductDescription = generateRandomProductDescription();\r",
+							"// Store the random product description in an environment variable\r",
+							"pm.environment.set('randProdDesc', randomProductDescription);\r",
+							"\r",
+							"// Generate a random product price\r",
+							"function generateRandomProductPrice(min, max, decimalPlaces) {\r",
+							"    const price = (Math.random() * (max - min) + min).toFixed(decimalPlaces);\r",
+							"    return parseFloat(price).toFixed(decimalPlaces);\r",
+							"}\r",
+							"const minPrice = 100000.00; // Define the minimum price\r",
+							"const maxPrice = 5000000.00; // Define the maximum price\r",
+							"const decimalPlaces = 0; // Define the number of decimal places\r",
+							"const randomProductPrice = generateRandomProductPrice(minPrice, maxPrice, decimalPlaces);\r",
+							"// Store the random product price in an environment variable\r",
+							"pm.environment.set('randProdPrice', randomProductPrice);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"prodId\", resp.product.id);\r",
+							"pm.environment.set(\"prodCatId\", resp.product.category_id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product[name]",
+							"value": "{{randProduct}}",
+							"type": "text"
+						},
+						{
+							"key": "product[price]",
+							"value": "{{randProdPrice}}",
+							"type": "text"
+						},
+						{
+							"key": "product[description]",
+							"value": "{{randProdDesc}}",
+							"type": "text"
+						},
+						{
+							"key": "product[status]",
+							"value": "draft",
+							"type": "text"
+						},
+						{
+							"key": "product[category_id]",
+							"value": "{{randCatId}}",
+							"type": "text"
+						},
+						{
+							"key": "product[images][]",
+							"type": "file",
+							"src": "/C:/Users/mpradana/OneDrive - Itron/Pictures/Screenshot 2021-07-05 133107.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/products.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Create Product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product[name]",
+									"value": "{{randProduct}}",
+									"type": "text"
+								},
+								{
+									"key": "product[price]",
+									"value": "{{randProdPrice}}",
+									"type": "text"
+								},
+								{
+									"key": "product[description]",
+									"value": "{{randProdDesc}}",
+									"type": "text"
+								},
+								{
+									"key": "product[status]",
+									"value": "published",
+									"type": "text"
+								},
+								{
+									"key": "product[category_id]",
+									"value": "{{randCatId}}",
+									"type": "text"
+								},
+								{
+									"key": "product[images][]",
+									"type": "file",
+									"src": "/C:/Users/mpradana/OneDrive - Itron/Pictures/Screenshot 2021-07-05 133107.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/products.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products.json"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 01:35:38 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Location",
+							"value": "https://secondhand.binaracademy.org/products/51572"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c777e2ab2d14329a40a63f9a99096fab\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=XrtYpscE2TSbsaKjktIUweMTdzYpwVtfjsE%2F1V%2BN%2B3GjOcR%2F1iDExL3PZh3yJ374Zld8MakmF8YjW43rVSkmP9%2BWWqSkYLR6v1ZGWLDTBzknGzBBFZ%2F65IHeebjIG2SjsmO2b434arBQ4wcMf43wldTE3ly9v2yimVGhinuDc1aS9EBJrmZI%2FBaDJ8SjKj%2BHSX1XKWfu3d3d48Zxd%2BVhQBK2E%2F4yOQJ20EvTmEmIbz2eoQ313tsCZH79AvuOmTUOPX7gKhXSckkGKQmn%2BO9OcStBtBWJIfW1uTzNNMNa011hwkn8fPkez%2FjMCFKb2ZJzNuYEPrjcFEbPWSTIwedrWJZX7mLQyBLxZNeY14pjrX%2BdErbG5C8PbcoCNsy%2FJVD3pDRLjTONsjICEhqTRQ74eEKYlRFteJlXbLud0CyAyEmFz4zlxnxIMVvYlMM%3D--5G0L2br%2FLo5UcHI8--W0NoS0Wejn3tc75eeNsNnw%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9104984e-9eb5-40ee-93c3-2e7462e6de1c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.423002"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"product\": {\n        \"id\": 51572,\n        \"name\": \"Software License\",\n        \"price\": 1046336,\n        \"description\": \"Sleek and modern design\",\n        \"category_id\": 3,\n        \"user_id\": 87507,\n        \"created_at\": \"2023-11-08T01:35:38.569Z\",\n        \"updated_at\": \"2023-11-08T01:35:38.575Z\",\n        \"url\": \"https://secondhand.binaracademy.org/products/51572.json\",\n        \"user\": {\n            \"id\": 87507,\n            \"name\": \"Emma Wilson\",\n            \"email\": \"syuj54ak3@example.com\",\n            \"phone_number\": \"0853550622808\",\n            \"address\": \"Jalan Raya, Yogyakarta, Central Java\",\n            \"avatar\": {\n                \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlU3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9cdb5c33d009c501a34804bd96d937501523b675/Screenshot%202021-07-05%20133107.png\"\n            }\n        },\n        \"images\": [\n            {\n                \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlk3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ed33717b433e12980a6f8ec5e0407f56496d7ae4\",\n                \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlk3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ed33717b433e12980a6f8ec5e0407f56496d7ae4/Screenshot%202021-07-05%20133107.png\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "List Products",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products.json?page=1&category_id={{prodCatId}}&user_id={{userId}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products.json"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "category_id",
+							"value": "{{prodCatId}}"
+						},
+						{
+							"key": "user_id",
+							"value": "{{userId}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success List Products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products.json?page=1&category_id=1&user_id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products.json"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "category_id",
+									"value": "1"
+								},
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 16:13:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699287207&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=zFti5AxZz8%2FVTU9uNQ5d5%2FxqJkvgBxz0MYUE4jHPM5A%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699287207&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=zFti5AxZz8%2FVTU9uNQ5d5%2FxqJkvgBxz0MYUE4jHPM5A%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8\""
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=14400"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "MISS"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "821e9fb299d740bf-SIN"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"page\": 1,\n    \"per_page\": 6,\n    \"total\": 12,\n    \"total_pages\": 2,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"cerulean\",\n            \"year\": 2000,\n            \"color\": \"#98B2D1\",\n            \"pantone_value\": \"15-4020\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"fuchsia rose\",\n            \"year\": 2001,\n            \"color\": \"#C74375\",\n            \"pantone_value\": \"17-2031\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"true red\",\n            \"year\": 2002,\n            \"color\": \"#BF1932\",\n            \"pantone_value\": \"19-1664\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"aqua sky\",\n            \"year\": 2003,\n            \"color\": \"#7BC4C4\",\n            \"pantone_value\": \"14-4811\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"tigerlily\",\n            \"year\": 2004,\n            \"color\": \"#E2583E\",\n            \"pantone_value\": \"17-1456\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"blue turquoise\",\n            \"year\": 2005,\n            \"color\": \"#53B0AE\",\n            \"pantone_value\": \"15-5217\"\n        }\n    ],\n    \"support\": {\n        \"url\": \"https://reqres.in/#support-heading\",\n        \"text\": \"To keep ReqRes free, contributions towards server costs are appreciated!\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Product",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const minId = 1\r",
+							"const maxId = 10\r",
+							"\r",
+							"const id = (Math.random() * (maxId - minId) + minId).toFixed(0);\r",
+							"pm.environment.set(\"randProdId\", id);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products/{{prodId}}.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"{{prodId}}.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Get Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/{{randProdId}}.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"{{randProdId}}.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 03:06:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bc0903b9c261106e6610289f8de5c49c\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=61D254weMHKmaoPqTRlhi9DGc1wdiLuFqzm3TMj2m4wfGGXoNYLloG5zHyFbVvMfBZQbzSvjVslQDByKUaBzWWtzANhpSssrXzDIIdbM6KLLCHXFqz%2BjKur4FhD%2B1tYXMFemSJm9QjFWSZBGUSwonRuYop9pQ6Do6QoGzmiarkHfnLl%2BI%2FHviX2x2HmXfiotSP3531x6nM%2FdilxMPnCuNW5tmDb%2F0Ebesc3naZhdkxD86cTHWcckEU%2F52I2kHoZAeiSZd%2Ba0M4NqfpmsqT3n%2F0k9GFzJdS%2Fac%2FGLJdTPTaLgyki%2FwxCkIkHnbDgXxZ7TGRbu4qbx7aOE6tvPYfLqbRjIRb9ZOsyFDT78Y259Ctu68NXhe9jfBjDM2ZNeEWJueJZyM4aDnNDTFu%2Fpo7WnJUNXHtzrkCRN%2FinFyqpdEK7YF%2FsqS8ZV3jFX%2FCw%3D--h6Q4b3rWIr8ytK%2BP--JaFWfoT%2B9bcg902iaqVeNQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "4fdff938-4160-4e57-b2df-292931de3b50"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.018351"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"product\": {\n        \"id\": 3,\n        \"name\": \"Supra Bapak\",\n        \"price\": 7000000,\n        \"description\": \"Tipe Mesin: 4-Langkah, SOHC, Silinder Tunggal\\r\\nKapasitas Mesin: 124,89 cc\\r\\nSistem Suplai Bahan Bakar: PGM-FI (Programmed Fuel Injection)\\r\\nDiameter X Langkah: 52,4 x 57,9 mm\\r\\nTipe Tranmisi: 4 Speed, Rotary\\r\\nRasio Kompresi: 9,3:1\\r\\nDaya Maksimum: 7,40 kW (10,1 PS) / 8.000 rpm\\r\\nTorsi Maksimum: 9,30 Nm (0,95 kgf.m) / 4.000 rpm\\r\\nTipe Starter: Starter Kaki dan Elektrik\\r\\nTipe Kopling: Multiplate Wet Clutch with Coil Spring\\r\\nSistem Pendingin Mesin: Pendingin Udara\\r\\nPola Perpindahan Gigi: N-1-2-3-4-N\",\n        \"category_id\": 2,\n        \"user_id\": 1,\n        \"created_at\": \"2023-01-04T06:49:43.559Z\",\n        \"updated_at\": \"2023-03-06T13:48:09.689Z\",\n        \"url\": \"https://secondhand.binaracademy.org/products/3.json\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Fikri Rahmat Nurhidayat\",\n            \"email\": \"fnurhidayat@binar.co.id\",\n            \"phone_number\": \"+6282227673781\",\n            \"address\": \"Jl. Arjuna I B38\",\n            \"city\": {\n                \"id\": 1,\n                \"name\": \"Solo\"\n            },\n            \"avatar\": {\n                \"filename\": \"Mr.House.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e970b28380f4faea3cc9440034b1d7617bd45c4e/Mr.House.png\"\n            }\n        },\n        \"images\": [\n            {\n                \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3afa565d5f7e332c6df6f69a4ddc0de0606a15c5\",\n                \"filename\": \"Supra.jpg\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3afa565d5f7e332c6df6f69a4ddc0de0606a15c5/Supra.jpg\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"prodId\", resp.product.id);\r",
+							"pm.environment.set(\"prodCatId\", resp.product.category_id);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const minId = 1\r",
+							"const maxId = 5\r",
+							"\r",
+							"const cat = (Math.random() * (maxId - minId) + minId).toFixed(0);\r",
+							"pm.environment.set(\"randCatId\", cat);\r",
+							"\r",
+							"// Define an array of random IT computer product names\r",
+							"const computerProductNames = [\r",
+							"    \"Laptop\", \"Desktop Computer\", \"Monitor\", \"Keyboard\", \"Mouse\", \"Router\", \"External Hard Drive\",\r",
+							"    \"Webcam\", \"Printer\", \"Scanner\", \"Graphics Card\", \"Motherboard\", \"CPU\", \"RAM\", \"SSD\",\r",
+							"    \"Software License\", \"Tablet\", \"Server\", \"UPS\", \"Network Switch\"\r",
+							"];\r",
+							"// Generate a random IT computer product name\r",
+							"function generateRandomComputerProductName() {\r",
+							"    const randomIndex = Math.floor(Math.random() * computerProductNames.length);\r",
+							"    return computerProductNames[randomIndex];\r",
+							"}\r",
+							"const randomComputerProductName = generateRandomComputerProductName();\r",
+							"// Store the random computer product name in an environment variable\r",
+							"pm.environment.set('randProduct', randomComputerProductName);\r",
+							"\r",
+							"// Define an array of random product descriptions\r",
+							"const productDescriptions = [\r",
+							"    \"High-performance and reliable\",\r",
+							"    \"Sleek and modern design\",\r",
+							"    \"Built to last with top-quality materials\",\r",
+							"    \"Versatile and easy to use\",\r",
+							"    \"Cutting-edge technology for superior performance\",\r",
+							"    \"Ergonomically designed for comfort\",\r",
+							"    \"Enhance your productivity with this product\",\r",
+							"    \"Experience the future of technology\",\r",
+							"    \"Affordable and feature-packed\",\r",
+							"    \"Innovative and stylish\",\r",
+							"    \"Ideal for both personal and professional use\",\r",
+							"    \"Eco-friendly and energy-efficient\",\r",
+							"    \"Seamless connectivity and compatibility\",\r",
+							"    \"Get the job done with ease\",\r",
+							"    \"Upgrade your setup with this exceptional product\",\r",
+							"    \"Stay ahead with the latest in tech\",\r",
+							"];\r",
+							"\r",
+							"// Generate a random product description\r",
+							"function generateRandomProductDescription() {\r",
+							"    const randomIndex = Math.floor(Math.random() * productDescriptions.length);\r",
+							"    return productDescriptions[randomIndex];\r",
+							"}\r",
+							"const randomProductDescription = generateRandomProductDescription();\r",
+							"// Store the random product description in an environment variable\r",
+							"pm.environment.set('randProdDesc', randomProductDescription);\r",
+							"\r",
+							"// Generate a random product price\r",
+							"function generateRandomProductPrice(min, max, decimalPlaces) {\r",
+							"    const price = (Math.random() * (max - min) + min).toFixed(decimalPlaces);\r",
+							"    return parseFloat(price).toFixed(decimalPlaces);\r",
+							"}\r",
+							"const minPrice = 100000.00; // Define the minimum price\r",
+							"const maxPrice = 5000000.00; // Define the maximum price\r",
+							"const decimalPlaces = 0; // Define the number of decimal places\r",
+							"const randomProductPrice = generateRandomProductPrice(minPrice, maxPrice, decimalPlaces);\r",
+							"// Store the random product price in an environment variable\r",
+							"pm.environment.set('randProdPrice', randomProductPrice);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product\": {\r\n        \"name\": \"{{randProduct}}\",\r\n        \"price\": \"{{randProdPrice}}\",\r\n        \"description\": \"{{randProdDesc}}\",\r\n        \"status\": \"published\",\r\n        \"category_id\": \"{{randCatId}}\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/products/{{prodId}}.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"{{prodId}}.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Update Product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product[name]",
+									"value": "{{randProduct}}",
+									"type": "text"
+								},
+								{
+									"key": "product[price]",
+									"value": "{{randProdPrice}}",
+									"type": "text"
+								},
+								{
+									"key": "product[description]",
+									"value": "{{randProdDesc}}",
+									"type": "text"
+								},
+								{
+									"key": "product[status]",
+									"value": "published",
+									"type": "text"
+								},
+								{
+									"key": "product[category_id]",
+									"value": "{{randCatId}}",
+									"type": "text"
+								},
+								{
+									"key": "product[images][]",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product[persisted_images][]",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/products/{{prodId}}.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"{{prodId}}.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 01:42:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Location",
+							"value": "https://secondhand.binaracademy.org/products/51574"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6934ce9514daad4114dbbf72c0c0d7cf\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=lqaSJH%2FksYdYaJRzeVGUjEd9Fqkouj69qltCAInXFqmKDg16d6dUtWqAqkUteGKAkCTAJb7heXSXj26rs0Vpq2gceKi4vvUsRz2NFbSvG52bP3oelaobA%2Fz53duCU0HBmq9S2w1VmphKz5yMfNmo%2B9ZN1YrEs%2Bg332IhMC5R%2Bx%2B6%2FOT4SStXzMEL8UHF9uMxIdmkkf1nRGjnF1haDv%2FPbKWRwejrCyFxUTvpCkYqflHRZEAelA6mrdQ7m8sKDTro%2Fou%2B6iZ7XRlckGNACxzNXkjZgXJivzUkZPj%2BOwN14tjFbsQAjCDv2K2CPfUVTrEaoIJoRKIIm8ptoY5FyEsN4eVJXnNURLs5VPM8AalfaytQApIMSqzpV3fr1bMr0kz8DajzlepA51JElpN%2FPuEMnPj1ayFNVAkEUi9RjAE0R8LrtcFomv7HMw4z0%2Fw%3D--Ct1NKH%2F2eDxUfAeF--FBc1fbZuylE%2BNYxKbkXhpw%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "e7a984b2-112c-41a0-ba52-821e26b84417"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.032726"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"product\": {\n        \"id\": 51574,\n        \"name\": \"Printer\",\n        \"price\": 1762432,\n        \"description\": \"Seamless connectivity and compatibility\",\n        \"category_id\": 5,\n        \"user_id\": 87507,\n        \"created_at\": \"2023-11-08T01:40:49.728Z\",\n        \"updated_at\": \"2023-11-08T01:42:14.476Z\",\n        \"url\": \"https://secondhand.binaracademy.org/products/51574.json\",\n        \"user\": {\n            \"id\": 87507,\n            \"name\": \"Emma Wilson\",\n            \"email\": \"syuj54ak3@example.com\",\n            \"phone_number\": \"0853550622808\",\n            \"address\": \"Jalan Raya, Yogyakarta, Central Java\",\n            \"avatar\": {\n                \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlU3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9cdb5c33d009c501a34804bd96d937501523b675/Screenshot%202021-07-05%20133107.png\"\n            }\n        },\n        \"images\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products/{{prodId}}.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"{{prodId}}.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Delete Product",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/{{prodId}}.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"{{prodId}}.json"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 01:43:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=KPlkyGM46pozWcb0ovRMw%2Bn2210AE5I9KxI5i62omoPAKQNiN32u%2BuIsdsKu9IVnE4t1aD36EsG1UQgrUpeYBi2sWrSyFjo0hR96Jt4%2BZo3foRJQuOjYajNg7uFLUliPuhgtmEXSjqm7oYfLUs0fCBE6g9xUOUZuEbFqXb9Fpy6041%2FiJHcc8VjASDR7%2Fa2%2Bcsxw9Zr4AiAD3A6iAX2yOSN9DksDtxOyvuW7IdI1r28egizTHIKUpftNdZT6WBRpTbGQVI6VzRXz3B9c4SCC6zu65LIcn9ygxUcvHUKAYFv3Fi5kbepnlzX%2Fw4QaNybu9MBbXZiVCW787ZUCsyEOyasKogc2mpIG0Wf0TD621Q4RTcqHFDiZ9MdAtfcs3ndMnxYecgv%2B6DnY3cXH9qk48vYgARavKg1CavxI%2BxNBwvzb76N1xBk4iaV9e%2BE%3D--GVIWpvkOfuBppM0h--LapC6JfycQ8TURd8kAhDvA%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "ae86d331-97c1-493f-8b85-d22f17b07614"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.012283"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Recreate Product",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const minId = 1\r",
+							"const maxId = 5\r",
+							"\r",
+							"const cat = (Math.random() * (maxId - minId) + minId).toFixed(0);\r",
+							"pm.environment.set(\"randCatId\", cat);\r",
+							"\r",
+							"// Define an array of random IT computer product names\r",
+							"const computerProductNames = [\r",
+							"    \"Laptop\", \"Desktop Computer\", \"Monitor\", \"Keyboard\", \"Mouse\", \"Router\", \"External Hard Drive\",\r",
+							"    \"Webcam\", \"Printer\", \"Scanner\", \"Graphics Card\", \"Motherboard\", \"CPU\", \"RAM\", \"SSD\",\r",
+							"    \"Software License\", \"Tablet\", \"Server\", \"UPS\", \"Network Switch\"\r",
+							"];\r",
+							"// Generate a random IT computer product name\r",
+							"function generateRandomComputerProductName() {\r",
+							"    const randomIndex = Math.floor(Math.random() * computerProductNames.length);\r",
+							"    return computerProductNames[randomIndex];\r",
+							"}\r",
+							"const randomComputerProductName = generateRandomComputerProductName();\r",
+							"// Store the random computer product name in an environment variable\r",
+							"pm.environment.set('randProduct', randomComputerProductName);\r",
+							"\r",
+							"// Define an array of random product descriptions\r",
+							"const productDescriptions = [\r",
+							"    \"High-performance and reliable\",\r",
+							"    \"Sleek and modern design\",\r",
+							"    \"Built to last with top-quality materials\",\r",
+							"    \"Versatile and easy to use\",\r",
+							"    \"Cutting-edge technology for superior performance\",\r",
+							"    \"Ergonomically designed for comfort\",\r",
+							"    \"Enhance your productivity with this product\",\r",
+							"    \"Experience the future of technology\",\r",
+							"    \"Affordable and feature-packed\",\r",
+							"    \"Innovative and stylish\",\r",
+							"    \"Ideal for both personal and professional use\",\r",
+							"    \"Eco-friendly and energy-efficient\",\r",
+							"    \"Seamless connectivity and compatibility\",\r",
+							"    \"Get the job done with ease\",\r",
+							"    \"Upgrade your setup with this exceptional product\",\r",
+							"    \"Stay ahead with the latest in tech\",\r",
+							"];\r",
+							"\r",
+							"// Generate a random product description\r",
+							"function generateRandomProductDescription() {\r",
+							"    const randomIndex = Math.floor(Math.random() * productDescriptions.length);\r",
+							"    return productDescriptions[randomIndex];\r",
+							"}\r",
+							"const randomProductDescription = generateRandomProductDescription();\r",
+							"// Store the random product description in an environment variable\r",
+							"pm.environment.set('randProdDesc', randomProductDescription);\r",
+							"\r",
+							"// Generate a random product price\r",
+							"function generateRandomProductPrice(min, max, decimalPlaces) {\r",
+							"    const price = (Math.random() * (max - min) + min).toFixed(decimalPlaces);\r",
+							"    return parseFloat(price).toFixed(decimalPlaces);\r",
+							"}\r",
+							"const minPrice = 100000.00; // Define the minimum price\r",
+							"const maxPrice = 5000000.00; // Define the maximum price\r",
+							"const decimalPlaces = 0; // Define the number of decimal places\r",
+							"const randomProductPrice = generateRandomProductPrice(minPrice, maxPrice, decimalPlaces);\r",
+							"// Store the random product price in an environment variable\r",
+							"pm.environment.set('randProdPrice', randomProductPrice);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"prodId\", parseInt(resp.product.id));\r",
+							"pm.environment.set(\"prodCatId\", resp.product.category_id);\r",
+							"pm.environment.set(\"sellerId\", resp.product.user_id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product[name]",
+							"value": "{{randProduct}}",
+							"type": "text"
+						},
+						{
+							"key": "product[price]",
+							"value": "{{randProdPrice}}",
+							"type": "text"
+						},
+						{
+							"key": "product[description]",
+							"value": "{{randProdDesc}}",
+							"type": "text"
+						},
+						{
+							"key": "product[status]",
+							"value": "draft",
+							"type": "text"
+						},
+						{
+							"key": "product[category_id]",
+							"value": "{{randCatId}}",
+							"type": "text"
+						},
+						{
+							"key": "product[images][]",
+							"type": "file",
+							"src": "/C:/Users/mpradana/OneDrive - Itron/Pictures/Screenshot 2021-07-05 133107.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/products.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Recreate Product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product[name]",
+									"value": "{{randProduct}}",
+									"type": "text"
+								},
+								{
+									"key": "product[price]",
+									"value": "{{randProdPrice}}",
+									"type": "text"
+								},
+								{
+									"key": "product[description]",
+									"value": "{{randProdDesc}}",
+									"type": "text"
+								},
+								{
+									"key": "product[status]",
+									"value": "draft",
+									"type": "text"
+								},
+								{
+									"key": "product[category_id]",
+									"value": "{{randCatId}}",
+									"type": "text"
+								},
+								{
+									"key": "product[images][]",
+									"type": "file",
+									"src": "/C:/Users/mpradana/OneDrive - Itron/Pictures/Screenshot 2021-07-05 133107.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/products.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products.json"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 02:56:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Location",
+							"value": "https://secondhand.binaracademy.org/products/51578"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11b96f9cf9982675916ebdc0a79803d7\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=vLNj%2BvxHKhCycM7COGDvr%2FVnymycSGyiEuSifY0NOIwzSGii7kfU30qXxn3GIir8tHxQr3gadyUPhxkUkcqXPjpZD8Am05Cf74NP6r%2BIyAnxAyLz9tllsY5MekS4SMC%2BZFGkT%2Bx1ryE5%2FqHpEq773ve1JCa5inSk9hzdg%2B2A%2BOXCjpQJmNFM3zPasFv8%2BlP1dNTFIWaHvuEHck4eGxSIx1ExOoE7%2BMSk8trlzRYZexbK0r%2BtaZtP0tNDjhmJTTIOFwhjRVduekl1T3zNSJ2NAM59cY4NIWh3yRZRTDpa2H5Zx7DWhp62CNCmPSV8nUQq9aW2vFKeGA56Pmdq2p8znYrznmHmMyiYw7Mj0dMgG2ahrlkB3xEsvW3I0DmfyFAGl8tEDHTUa8cLkVHC%2BpBwUifzApI2diWydw0PSs9eZBr32m%2FDbC0BqJvsmGQ%3D--KzsLSP4kZyKZivkT--72UlzeNXHjcfmxldCWI%2BrQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "03927ffd-c61e-47a9-93d4-ac5bff360d4e"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.345466"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"product\": {\n        \"id\": 51578,\n        \"name\": \"Motherboard\",\n        \"price\": 938405,\n        \"description\": \"Enhance your productivity with this product\",\n        \"category_id\": 2,\n        \"user_id\": 87507,\n        \"created_at\": \"2023-11-08T02:56:33.975Z\",\n        \"updated_at\": \"2023-11-08T02:56:33.981Z\",\n        \"url\": \"https://secondhand.binaracademy.org/products/51578.json\",\n        \"user\": {\n            \"id\": 87507,\n            \"name\": \"Emma Wilson\",\n            \"email\": \"syuj54ak3@example.com\",\n            \"phone_number\": \"0853550622808\",\n            \"address\": \"Jalan Raya, Yogyakarta, Central Java\",\n            \"avatar\": {\n                \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlU3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9cdb5c33d009c501a34804bd96d937501523b675/Screenshot%202021-07-05%20133107.png\"\n            }\n        },\n        \"images\": [\n            {\n                \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN0U3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6a6f8856eb6060c7a44a6fe57a3b758dc4d10770\",\n                \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN0U3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6a6f8856eb6060c7a44a6fe57a3b758dc4d10770/Screenshot%202021-07-05%20133107.png\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Buyer Registration",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"buyerName\", resp.user.name);\r",
+							"pm.environment.set(\"buyerEmail\", resp.user.email);\r",
+							"pm.environment.set(\"buyerId\", resp.user.id);\r",
+							"pm.environment.set(\"accessToken\", resp.session.token);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Generate a random name\r",
+							"function generateRandomName() {\r",
+							"    const firstNames = [\"John\", \"Alice\", \"Bob\", \"Emma\", \"David\",\"Jhony\"]; // Add more first names as needed\r",
+							"    const lastNames = [\"Smith\", \"Johnson\", \"Doe\", \"Brown\", \"Wilson\"]; // Add more last names as needed\r",
+							"    const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)];\r",
+							"    const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];\r",
+							"    return `${randomFirstName} ${randomLastName}`;\r",
+							"}\r",
+							"const randomName = generateRandomName();\r",
+							"// Store the random name in an environment variable\r",
+							"pm.environment.set('buyerName', randomName);\r",
+							"\r",
+							"// Generate a random email address\r",
+							"function generateRandomEmail() {\r",
+							"    const username = Math.random().toString(36).substring(2, 12); // Generate a random username\r",
+							"    const domain = 'example.com'; // Replace 'example.com' with your desired domain\r",
+							"    return `${username}@${domain}`;\r",
+							"}\r",
+							"const randomEmail = generateRandomEmail();\r",
+							"// Store the random email in an environment variable\r",
+							"pm.environment.set('buyerEmail', randomEmail);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"name\": \"{{buyerName}}\",\r\n    \"email\": \"{{buyerEmail}}\",\r\n    \"password\": \"{{userPassword}}\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/users.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"name\": \"{{userName}}\",\r\n    \"email\": \"{{userEmail}}\",\r\n    \"password\": \"{{userPassword}}\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 02:03:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4NzQ1NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY5OTMyMjU4MSwiZXhwIjoxNzAwNTMyMTgxLCJqdGkiOiIyNzIzNGU2MS1mZjMxLTQwYmMtYTRjOS04YmZkYjU1Y2ZhNmMifQ.aXRUY2stcUonc1OjIsp1GRyOQB4o0jHNe5MWb70Fac4"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e7077e61cdacfa9febf435858a3824d6\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=PHGsVMlt8x7EUoq%2FyqQll8CRLF%2BV%2BoNKXF91hypHmrF6LdDhrBnJzpuO%2B65GGvJHgvbtCplAJ%2FtoyDZfRx4f8lEjYoaCMppvE%2ByG4Ouh6%2BdIkTOvvD342mcVNRy1RfY0DvpOQ9qG2Piwhh4WK%2BHQ%2BxpWFrrgsOXDCVVUmvMKmg%2FB6HPyAgWhj64bxKLm767dSmi6hU%2FRGvMWvIgD5zd6CggYId5FSC0%2BJQtGy9nNOfoLez7iwRFTTrX8EcAOGtpcAStSjDwcqHduf%2FFFsM9Sm1ej9CKsr17RiZPidvzpXLFtmcEAZVgY%2BgIvxuE7wEiuNRmkmU9B9oXkiRyfoGC5HxGQbzinQQ6v3Rpo1Mtv%2FHvXYZ6PrvY1m9SdDNfKF2Y5AgHEvFVSeVBwL1kr5uHWD%2FuzUlc2EfP4S3tVPxza9ynL85rpQT%2FIZxBBP1o%3D--%2BsyIvDnGZIf1rRx2--DomAPaKoZBKEyFMq8GE%2Bdw%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "64c9081e-198e-4cee-bab3-1c8413f82bce"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.287580"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 87454,\n        \"name\": \"Emma Johnson\",\n        \"email\": \"u32jkkvh2m@example.com\",\n        \"phone_number\": null,\n        \"address\": null\n    },\n    \"session\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4NzQ1NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY5OTMyMjU4MSwiZXhwIjoxNzAwNTMyMTgxLCJqdGkiOiIyNzIzNGU2MS1mZjMxLTQwYmMtYTRjOS04YmZkYjU1Y2ZhNmMifQ.aXRUY2stcUonc1OjIsp1GRyOQB4o0jHNe5MWb70Fac4\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Buyer Sign In",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"accessToken\", resp.session.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"email\": \"{{buyerEmail}}\",\r\n    \"password\": \"{{buyerPassword}}\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/users/sign_in.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"sign_in.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Sign In",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"{{userEmail}}\",\r\n    \"password\": \"{{userPassword}}\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/sign_in.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"sign_in.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 02:03:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4NzQ1NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY5OTMyMjYyNiwiZXhwIjoxNzAwNTMyMjI2LCJqdGkiOiJhYmMzNzgyMy1kMTc1LTQ0MDAtOTMzOS0wODkzMTc0ODRhYTUifQ.wsc19XkkJU0jfcJLVdO9CPfSdclpRVWOuT4KsQ3qIGo"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6b6a94305be8b5ee1778f33c76d58e52\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=Ctgi46xi1E6aejnftTmX4yfuMyxkb3tasPMO49qhsH5INBMVdr3uqWln71NtoD%2BEly3HPH7mEpIODfeep11i2NQwgKNOwTD5i6iQTQHLEn9k4%2FH0FTOpTqjUJLgH9NjCMluIAoV1q8alQLLUObzJXeeBygaGxG2qAa5MFb8BDVOQ1fl3%2BRJX%2BWV2w%2F%2BMacDzircsmBEL4STypbEhdcqFx3rVkCe4QzUu86sZdPyqm6eAazxqAxMoLORApB6a%2FSMK%2FmXjUyNb6ylG%2FFnnw0NDtUfKVnB8XEMfn3qRaqSpXzeKye0MayWGYyYYI1Ghhbl9qlnsnPyxFq6q5HjwgnAiRRrCj2XDJURZJAbFcs0eHZPVmqSAZnPSnvAV8LfDUkD%2BZVzpwl67KYNuVNdXstHzDViT9Q49gPGUL1bcce3GWdefmw7b6n0VQ4Tod4c%3D--Vqrd%2FJIPONbGJU0P--gvgCS%2BgzzcTQZ5O2tcOROQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9fa75059-6ae1-4903-b9b0-6c5c7ea521eb"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.008357"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 87454,\n        \"name\": \"Emma Johnson\",\n        \"email\": \"u32jkkvh2m@example.com\",\n        \"phone_number\": null,\n        \"address\": null\n    },\n    \"session\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4NzQ1NCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY5OTMyMjYyNiwiZXhwIjoxNzAwNTMyMjI2LCJqdGkiOiJhYmMzNzgyMy1kMTc1LTQ0MDAtOTMzOS0wODkzMTc0ODRhYTUifQ.wsc19XkkJU0jfcJLVdO9CPfSdclpRVWOuT4KsQ3qIGo\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Profile",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Generate a random name\r",
+							"function generateRandomName() {\r",
+							"    const firstNames = [\"John\", \"Alice\", \"Bob\", \"Emma\", \"David\",\"Jhony\"]; // Add more first names as needed\r",
+							"    const lastNames = [\"Smith\", \"Johnson\", \"Doe\", \"Brown\", \"Wilson\"]; // Add more last names as needed\r",
+							"    const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)];\r",
+							"    const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];\r",
+							"    return `${randomFirstName} ${randomLastName}`;\r",
+							"}\r",
+							"const randomName = generateRandomName();\r",
+							"// Store the random name in an environment variable\r",
+							"pm.environment.set('randName', randomName);\r",
+							"\r",
+							"// Generate a random email address\r",
+							"function generateRandomEmail() {\r",
+							"    const username = Math.random().toString(36).substring(2, 12); // Generate a random username\r",
+							"    const domain = 'example.com'; // Replace 'example.com' with your desired domain\r",
+							"    return `${username}@${domain}`;\r",
+							"}\r",
+							"const randomEmail = generateRandomEmail();\r",
+							"// Store the random email in an environment variable\r",
+							"pm.environment.set('randEmail', randomEmail);\r",
+							"\r",
+							"// Generate a random-looking Indonesian phone number\r",
+							"function generateRandomIndonesianPhoneNumber() {\r",
+							"    const prefixOptions = [\"0811\", \"0812\", \"0813\", \"0821\", \"0822\", \"0823\", \"0851\", \"0852\", \"0853\", \"0814\", \"0815\", \"0816\", \"0855\"];\r",
+							"    const selectedPrefix = prefixOptions[Math.floor(Math.random() * prefixOptions.length)];\r",
+							"    const remainingDigits = Math.floor(Math.random() * 1000000000).toString().padStart(9, '0');\r",
+							"    return selectedPrefix + remainingDigits;\r",
+							"}\r",
+							"const randomIndonesianPhoneNumber = generateRandomIndonesianPhoneNumber();\r",
+							"// Store the random Indonesian phone number in an environment variable\r",
+							"pm.environment.set('randPhoneNum', randomIndonesianPhoneNumber);\r",
+							"\r",
+							"// Generate a random-looking Indonesian address\r",
+							"function generateRandomIndonesianAddress() {\r",
+							"    const streets = [\"Jalan Merdeka\", \"Jalan Pahlawan\", \"Jalan Raya\", \"Jalan Cendrawasih\", \"Jalan Budi Utomo\", \"Jalan Diponegoro\"];\r",
+							"    const cities = [\"Jakarta\", \"Surabaya\", \"Bandung\", \"Yogyakarta\", \"Medan\", \"Semarang\"];\r",
+							"    const provinces = [\"Jakarta\", \"East Java\", \"West Java\", \"Yogyakarta\", \"North Sumatra\", \"Central Java\"];\r",
+							"    \r",
+							"    const randomStreet = streets[Math.floor(Math.random() * streets.length)];\r",
+							"    const randomCity = cities[Math.floor(Math.random() * cities.length)];\r",
+							"    const randomProvince = provinces[Math.floor(Math.random() * provinces.length)];\r",
+							"    \r",
+							"    return `${randomStreet}, ${randomCity}, ${randomProvince}`;\r",
+							"}\r",
+							"const randomIndonesianAddress = generateRandomIndonesianAddress();\r",
+							"// Store the random Indonesian address in an environment variable\r",
+							"pm.environment.set('randAddress', randomIndonesianAddress);\r",
+							"// Extract the city from the generated address\r",
+							"const city = randomIndonesianAddress.split(', ')[1];\r",
+							"// Store the extracted city in an environment variable\r",
+							"pm.environment.set('randCity', city);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"buyerName\", resp.user.name);\r",
+							"pm.environment.set(\"buyerEmail\", resp.user.email);\r",
+							"pm.environment.set(\"buyerId\", resp.user.id);\r",
+							"pm.environment.set(\"buyerPhoneNum\", resp.user.phone_number);\r",
+							"pm.environment.set(\"buyerAddress\", resp.user.address);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user[name]",
+							"value": "{{randName}}",
+							"type": "text"
+						},
+						{
+							"key": "user[phone_number]",
+							"value": "{{randPhoneNum}}",
+							"type": "text"
+						},
+						{
+							"key": "user[address]",
+							"value": "{{randAddress}}",
+							"type": "text"
+						},
+						{
+							"key": "user[city_id]",
+							"value": "25",
+							"type": "text"
+						},
+						{
+							"key": "user[avatar]",
+							"type": "file",
+							"src": "/C:/Users/mpradana/OneDrive - Itron/Pictures/Screenshot 2021-07-05 133107.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/profiles.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"profiles.json"
+					],
+					"query": [
+						{
+							"key": "avatar",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Update Profile",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user[name]",
+									"value": "{{randName}}",
+									"type": "text"
+								},
+								{
+									"key": "user[phone_number]",
+									"value": "{{randPhoneNum}}",
+									"type": "text"
+								},
+								{
+									"key": "user[address]",
+									"value": "{{randAddress}}",
+									"type": "text"
+								},
+								{
+									"key": "user[city_id]",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "user[avatar]",
+									"type": "file",
+									"src": "/C:/Users/mpradana/OneDrive - Itron/Pictures/Screenshot 2021-07-05 133107.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/profiles.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profiles.json"
+							],
+							"query": [
+								{
+									"key": "avatar",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 01:30:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bd663e8b517e7c135057598cf2eabdb7\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=qJXV%2FtaX3AUo2rXUtZHhFdT4KzHoYm36JDboaFgYB91Myshg8gDRde%2FZ%2FR4CCTkFeTOBq5y%2FvRpX83dcRnZ4tpQZO%2BXPyncke5AR9EwXjcjG7EQCPjaXxdwOFe36ooNjUSUxe2oTPV7%2FB9JXCoDisPXmz9wT8hzvJzsEMkORYZKfC6OZKGPdxmXuEBwb6ouLw8%2FJOqki3rFOXrNvzHKFDSItvf7MM7hatmXSDsvO22C4lNGvWQOmMWiprljv%2FIFPizHqiwSAaRWOFIx%2FQncyQwmcQz245dQyjYliOewRKbKl3sq94BS8jBU2H0ZNo3z09YREWCcLZzIkU0wXP2nfDsA0JfEDPoniKovuwJ63Q3NXbq6CUzS8uON9AT3znwQIm4SJvOg8gbeUS0c6fG0zQ6nYXNAM1YV%2BAVoSYScAIAcX%2FWi3L3ftNDtmI7w%3D--lz8sns8LfNA4uE5x--3yy8XNKiKVJ%2BlHRcHQL1Dg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "2e583156-a1b4-4d64-bd5a-90f1779531e0"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "1.279872"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 87507,\n        \"name\": \"Emma Wilson\",\n        \"email\": \"syuj54ak3@example.com\",\n        \"phone_number\": \"0853550622808\",\n        \"address\": \"Jalan Raya, Yogyakarta, Central Java\",\n        \"avatar\": {\n            \"filename\": \"Screenshot 2021-07-05 133107.png\",\n            \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlU3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9cdb5c33d009c501a34804bd96d937501523b675/Screenshot%202021-07-05%20133107.png\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Product Copy",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const minId = 1\r",
+							"const maxId = 10\r",
+							"\r",
+							"const id = (Math.random() * (maxId - minId) + minId).toFixed(0);\r",
+							"pm.environment.set(\"randProdId\", id);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"sellerId\", parseInt(resp.product.user_id));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products/{{prodId}}.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"{{prodId}}.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Get Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/{{randProdId}}.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"{{randProdId}}.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 03:06:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bc0903b9c261106e6610289f8de5c49c\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=61D254weMHKmaoPqTRlhi9DGc1wdiLuFqzm3TMj2m4wfGGXoNYLloG5zHyFbVvMfBZQbzSvjVslQDByKUaBzWWtzANhpSssrXzDIIdbM6KLLCHXFqz%2BjKur4FhD%2B1tYXMFemSJm9QjFWSZBGUSwonRuYop9pQ6Do6QoGzmiarkHfnLl%2BI%2FHviX2x2HmXfiotSP3531x6nM%2FdilxMPnCuNW5tmDb%2F0Ebesc3naZhdkxD86cTHWcckEU%2F52I2kHoZAeiSZd%2Ba0M4NqfpmsqT3n%2F0k9GFzJdS%2Fac%2FGLJdTPTaLgyki%2FwxCkIkHnbDgXxZ7TGRbu4qbx7aOE6tvPYfLqbRjIRb9ZOsyFDT78Y259Ctu68NXhe9jfBjDM2ZNeEWJueJZyM4aDnNDTFu%2Fpo7WnJUNXHtzrkCRN%2FinFyqpdEK7YF%2FsqS8ZV3jFX%2FCw%3D--h6Q4b3rWIr8ytK%2BP--JaFWfoT%2B9bcg902iaqVeNQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "4fdff938-4160-4e57-b2df-292931de3b50"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.018351"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"product\": {\n        \"id\": 3,\n        \"name\": \"Supra Bapak\",\n        \"price\": 7000000,\n        \"description\": \"Tipe Mesin: 4-Langkah, SOHC, Silinder Tunggal\\r\\nKapasitas Mesin: 124,89 cc\\r\\nSistem Suplai Bahan Bakar: PGM-FI (Programmed Fuel Injection)\\r\\nDiameter X Langkah: 52,4 x 57,9 mm\\r\\nTipe Tranmisi: 4 Speed, Rotary\\r\\nRasio Kompresi: 9,3:1\\r\\nDaya Maksimum: 7,40 kW (10,1 PS) / 8.000 rpm\\r\\nTorsi Maksimum: 9,30 Nm (0,95 kgf.m) / 4.000 rpm\\r\\nTipe Starter: Starter Kaki dan Elektrik\\r\\nTipe Kopling: Multiplate Wet Clutch with Coil Spring\\r\\nSistem Pendingin Mesin: Pendingin Udara\\r\\nPola Perpindahan Gigi: N-1-2-3-4-N\",\n        \"category_id\": 2,\n        \"user_id\": 1,\n        \"created_at\": \"2023-01-04T06:49:43.559Z\",\n        \"updated_at\": \"2023-03-06T13:48:09.689Z\",\n        \"url\": \"https://secondhand.binaracademy.org/products/3.json\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Fikri Rahmat Nurhidayat\",\n            \"email\": \"fnurhidayat@binar.co.id\",\n            \"phone_number\": \"+6282227673781\",\n            \"address\": \"Jl. Arjuna I B38\",\n            \"city\": {\n                \"id\": 1,\n                \"name\": \"Solo\"\n            },\n            \"avatar\": {\n                \"filename\": \"Mr.House.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e970b28380f4faea3cc9440034b1d7617bd45c4e/Mr.House.png\"\n            }\n        },\n        \"images\": [\n            {\n                \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3afa565d5f7e332c6df6f69a4ddc0de0606a15c5\",\n                \"filename\": \"Supra.jpg\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3afa565d5f7e332c6df6f69a4ddc0de0606a15c5/Supra.jpg\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Offer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"offer\": {\r\n    \"price\": 1000,\r\n    \"to_id\": \"{{sellerId}}\",\r\n    \"product_id\": \"{{prodId}}\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/offers.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"offers.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Create Offer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"offer\": {\r\n    \"price\": 1000,\r\n    \"to_id\": 87507,//\"{{sellerId}}\",\r\n    \"product_id\": 51573//\"{{prodId}}\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/offers.json",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"offers.json"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 03:09:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Location",
+							"value": "https://secondhand.binaracademy.org/offers/40914"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10de4c7df6e0f12b64da563380f8615f\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=%2BNp68EGDqkrhDtflygOlCQWGpOMel%2BhwhU6OwKyEik433Xy8lSNaGmlKHB98AhWySUjp22cWOuDrb21yDu75oE7UuzqqqAgj369spQBh905qourRUkSHv4BUH4ZQD1u%2BHkHynjn6WBCieFPop2HYCtO5AaZpIKYDiHXgo5sVSzvayg19I8nizGzGVueEwV6I%2F1iEbxn6Un%2FraGE0CCMgNxVEZUazSAA7xgm4PHKWDoHhooWu8ByTAa%2BdB4jhFb0sw8TlTgzlTfOzsWRG7%2FVeH45jOqx7FwjGCuAwkq5PrGvoks6iInCK52D%2F9YmFO7lsN4NJ3OhheIsxPECeN0MwUyX%2FBKFmfETN2m5JcQkuf1Dg6Kj9LY2PXBts0TWOfYi4kZUZfe8Zc%2B4mpXVZK985n0NblBsF2kpuvLOGaMIBv9hG3nm91LJlgtxI2Cs%3D--eUbvxDnBY%2B4z4IJU--frNyYcyvL6Zn%2BaEx6ndRDQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "ebe9b09a-7729-42e7-a47b-978d08bffa5c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.045489"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"offer\": {\n        \"id\": 40914,\n        \"price\": 1000,\n        \"status\": \"initiated\",\n        \"created_at\": \"2023-11-08T03:09:21.124Z\",\n        \"updated_at\": \"2023-11-08T03:09:21.124Z\",\n        \"product\": {\n            \"id\": 51573,\n            \"name\": \"RAM\",\n            \"price\": 3980130,\n            \"description\": \"Affordable and feature-packed\",\n            \"category_id\": 1,\n            \"user_id\": 87507,\n            \"created_at\": \"2023-11-08T01:36:53.541Z\",\n            \"updated_at\": \"2023-11-08T03:09:21.128Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/51573.json\",\n            \"user\": {\n                \"id\": 87507,\n                \"name\": \"Emma Wilson\",\n                \"email\": \"syuj54ak3@example.com\",\n                \"phone_number\": \"0853550622808\",\n                \"address\": \"Jalan Raya, Yogyakarta, Central Java\",\n                \"avatar\": {\n                    \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlU3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9cdb5c33d009c501a34804bd96d937501523b675/Screenshot%202021-07-05%20133107.png\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNmM3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d7e0ff32f384d4d2a333af283294275a0585dc65\",\n                    \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNmM3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d7e0ff32f384d4d2a333af283294275a0585dc65/Screenshot%202021-07-05%20133107.png\"\n                }\n            ]\n        },\n        \"to\": {\n            \"id\": 87507,\n            \"name\": \"Emma Wilson\",\n            \"email\": \"syuj54ak3@example.com\",\n            \"phone_number\": \"0853550622808\",\n            \"address\": \"Jalan Raya, Yogyakarta, Central Java\",\n            \"avatar\": {\n                \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlU3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9cdb5c33d009c501a34804bd96d937501523b675/Screenshot%202021-07-05%20133107.png\"\n            }\n        },\n        \"from\": {\n            \"id\": 87508,\n            \"name\": \"David Brown\",\n            \"email\": \"l1pd2gsxuj@example.com\",\n            \"phone_number\": \"0816044513200\",\n            \"address\": \"Jalan Merdeka, Yogyakarta, Jakarta\",\n            \"avatar\": {\n                \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN1E3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1a4a3ba17c8ae675f9e142998130beed81084784/Screenshot%202021-07-05%20133107.png\"\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "List Offers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"// pm.environment.set(\"offerId\", resp.offers[0].id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users/{{sellerId}}/offers.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"{{sellerId}}",
+						"offers.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Offer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// pm.test(\"Your test name\", function () {\r",
+							"//     var resp = pm.response.json();\r",
+							"//     pm.expect(resp.offer.status).to.eql(\"accepted\");\r",
+							"// });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"offer\": {\r\n    \"status\": \"accepted\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/offers/{{offerId}}.json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"offers",
+						"{{offerId}}.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
