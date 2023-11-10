@@ -1690,7 +1690,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"product\": {\r\n        \"name\": \"{{randProduct}}\",\r\n        \"price\": \"{{randProdPrice}}\",\r\n        \"description\": \"{{randProdDesc}}\",\r\n        \"status\": \"published\",\r\n        \"category_id\": \"{{randCatId}}\"\r\n    }\r\n}",
+					"raw": "{\r\n    \"product\": {\r\n        \"name\": \"{{randProduct}}\",\r\n        \"price\": \"{{randProdPrice}}\",\r\n        \"description\": \"{{randProdDesc}}\",\r\n        \"status\": \"published\",\r\n        \"category_id\": \"{{randCatId}}\",\r\n        \"images\": [],\r\n        \"persisted_images\": []\r\n    }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2997,9 +2997,12 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"var resp = pm.response.json();\r",
+							"pm.environment.set(\"offerId\", parseInt(resp.offer.id));"
 						],
 						"type": "text/javascript"
 					}
@@ -3007,10 +3010,16 @@
 			],
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"offer\": {\r\n    \"price\": 1000,\r\n    \"to_id\": \"{{sellerId}}\",\r\n    \"product_id\": \"{{prodId}}\"\r\n  }\r\n}",
+					"raw": "{\r\n  \"offer\": {\r\n    \"price\": 1000,\r\n    \"to_id\": 87479,\r\n    \"product_id\": 51550\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -3032,10 +3041,16 @@
 					"name": "Success Create Offer",
 					"originalRequest": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"offer\": {\r\n    \"price\": 1000,\r\n    \"to_id\": 87507,//\"{{sellerId}}\",\r\n    \"product_id\": 51573//\"{{prodId}}\"\r\n  }\r\n}",
+							"raw": "{\r\n  \"offer\": {\r\n    \"price\": 1000,\r\n    \"to_id\": 87479,\r\n    \"product_id\": 51550\r\n  }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3062,7 +3077,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 08 Nov 2023 03:09:21 GMT"
+							"value": "Fri, 10 Nov 2023 12:44:26 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -3102,11 +3117,11 @@
 						},
 						{
 							"key": "Location",
-							"value": "https://secondhand.binaracademy.org/offers/40914"
+							"value": "https://secondhand.binaracademy.org/offers/41037"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"10de4c7df6e0f12b64da563380f8615f\""
+							"value": "W/\"30c6f364009de5f4921ff4b393c067ce\""
 						},
 						{
 							"key": "Cache-Control",
@@ -3114,15 +3129,15 @@
 						},
 						{
 							"key": "Set-Cookie",
-							"value": "_binar_playground_secondhand_marketplace_session=%2BNp68EGDqkrhDtflygOlCQWGpOMel%2BhwhU6OwKyEik433Xy8lSNaGmlKHB98AhWySUjp22cWOuDrb21yDu75oE7UuzqqqAgj369spQBh905qourRUkSHv4BUH4ZQD1u%2BHkHynjn6WBCieFPop2HYCtO5AaZpIKYDiHXgo5sVSzvayg19I8nizGzGVueEwV6I%2F1iEbxn6Un%2FraGE0CCMgNxVEZUazSAA7xgm4PHKWDoHhooWu8ByTAa%2BdB4jhFb0sw8TlTgzlTfOzsWRG7%2FVeH45jOqx7FwjGCuAwkq5PrGvoks6iInCK52D%2F9YmFO7lsN4NJ3OhheIsxPECeN0MwUyX%2FBKFmfETN2m5JcQkuf1Dg6Kj9LY2PXBts0TWOfYi4kZUZfe8Zc%2B4mpXVZK985n0NblBsF2kpuvLOGaMIBv9hG3nm91LJlgtxI2Cs%3D--eUbvxDnBY%2B4z4IJU--frNyYcyvL6Zn%2BaEx6ndRDQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+							"value": "_binar_playground_secondhand_marketplace_session=KlnEn4CHRik3ZnGmhlpwt742NR3l%2Fw3FEFYRZdHdxz68jbhi1k1Btf4LbrnzJdxCYobnLHTeYyaHdAt9Xy%2BnzhMyG078ERcAm5%2BR%2FsgCAeRT3rJnlLhXI1uRY8qBWaWTco1y4qaGZ9q729QK3VckPLn0fsxvPSDC6KrrO%2FYfOjBjIH1j5LchH%2B49ihi4xs5HZ%2Bai%2BdkqhLXchx74V6xrCg3RRkvDZswNyO3ES%2Fl8ndqclXDOmiZfyHfo%2BH31Jc0%2BcsMji9yUacuCsJpR34%2BSlPQaVDykauQUdvLFV%2B0hk%2BHgspnueTl563o9n2ml9nrHeAIQkY0ewCTjpXTSZ8erFHsy1%2BrsJqwJ4amWksTA%2BxCX%2BwD1J6mff4O3DpKBHozvpXwdTtQQNFd3%2BE62CKNbFG8yXBiH4Yp4ULebNy7auClvIT1iKtEuHwae4No%3D--xApze7VXmwW3NthU--XZFtXh5qVS3PF6xJ2r%2B8Jg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
 						},
 						{
 							"key": "X-Request-Id",
-							"value": "ebe9b09a-7729-42e7-a47b-978d08bffa5c"
+							"value": "e3f2a51c-7b19-4ef9-b7cc-bd352e7a2d71"
 						},
 						{
 							"key": "X-Runtime",
-							"value": "0.045489"
+							"value": "0.038053"
 						},
 						{
 							"key": "Strict-Transport-Security",
@@ -3134,7 +3149,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"offer\": {\n        \"id\": 40914,\n        \"price\": 1000,\n        \"status\": \"initiated\",\n        \"created_at\": \"2023-11-08T03:09:21.124Z\",\n        \"updated_at\": \"2023-11-08T03:09:21.124Z\",\n        \"product\": {\n            \"id\": 51573,\n            \"name\": \"RAM\",\n            \"price\": 3980130,\n            \"description\": \"Affordable and feature-packed\",\n            \"category_id\": 1,\n            \"user_id\": 87507,\n            \"created_at\": \"2023-11-08T01:36:53.541Z\",\n            \"updated_at\": \"2023-11-08T03:09:21.128Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/51573.json\",\n            \"user\": {\n                \"id\": 87507,\n                \"name\": \"Emma Wilson\",\n                \"email\": \"syuj54ak3@example.com\",\n                \"phone_number\": \"0853550622808\",\n                \"address\": \"Jalan Raya, Yogyakarta, Central Java\",\n                \"avatar\": {\n                    \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlU3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9cdb5c33d009c501a34804bd96d937501523b675/Screenshot%202021-07-05%20133107.png\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNmM3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d7e0ff32f384d4d2a333af283294275a0585dc65\",\n                    \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNmM3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d7e0ff32f384d4d2a333af283294275a0585dc65/Screenshot%202021-07-05%20133107.png\"\n                }\n            ]\n        },\n        \"to\": {\n            \"id\": 87507,\n            \"name\": \"Emma Wilson\",\n            \"email\": \"syuj54ak3@example.com\",\n            \"phone_number\": \"0853550622808\",\n            \"address\": \"Jalan Raya, Yogyakarta, Central Java\",\n            \"avatar\": {\n                \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlU3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9cdb5c33d009c501a34804bd96d937501523b675/Screenshot%202021-07-05%20133107.png\"\n            }\n        },\n        \"from\": {\n            \"id\": 87508,\n            \"name\": \"David Brown\",\n            \"email\": \"l1pd2gsxuj@example.com\",\n            \"phone_number\": \"0816044513200\",\n            \"address\": \"Jalan Merdeka, Yogyakarta, Jakarta\",\n            \"avatar\": {\n                \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN1E3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1a4a3ba17c8ae675f9e142998130beed81084784/Screenshot%202021-07-05%20133107.png\"\n            }\n        }\n    }\n}"
+					"body": "{\n    \"offer\": {\n        \"id\": 41037,\n        \"price\": 1000,\n        \"status\": \"initiated\",\n        \"created_at\": \"2023-11-10T12:44:26.414Z\",\n        \"updated_at\": \"2023-11-10T12:44:26.414Z\",\n        \"product\": {\n            \"id\": 51550,\n            \"name\": \"botol\",\n            \"price\": 5000,\n            \"description\": \"tumblr\",\n            \"category_id\": 1,\n            \"user_id\": 87479,\n            \"created_at\": \"2023-11-07T14:03:03.483Z\",\n            \"updated_at\": \"2023-11-07T14:12:49.234Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/51550.json\",\n            \"user\": {\n                \"id\": 87479,\n                \"name\": \"candra\",\n                \"email\": \"ruswidyawanc@gmail.com\",\n                \"phone_number\": \"0811833835\",\n                \"address\": \"kemang\",\n                \"avatar\": {\n                    \"filename\": \"LS2-EVENT-1280x500.jpg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMHM3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--b8350199ed6d17939e3a3975a1dd9a806ff2ad5b/LS2-EVENT-1280x500.jpg\"\n                }\n            },\n            \"images\": []\n        },\n        \"to\": {\n            \"id\": 87479,\n            \"name\": \"candra\",\n            \"email\": \"ruswidyawanc@gmail.com\",\n            \"phone_number\": \"0811833835\",\n            \"address\": \"kemang\",\n            \"avatar\": {\n                \"filename\": \"LS2-EVENT-1280x500.jpg\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMHM3QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--b8350199ed6d17939e3a3975a1dd9a806ff2ad5b/LS2-EVENT-1280x500.jpg\"\n            }\n        },\n        \"from\": {\n            \"id\": 87761,\n            \"name\": \"Alice Johnson\",\n            \"email\": \"scle37cdt8@example.com\",\n            \"phone_number\": \"0851029429773\",\n            \"address\": \"Jalan Raya, Semarang, Jakarta\",\n            \"avatar\": {\n                \"filename\": \"Screenshot 2021-07-05 133107.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBemhCQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--97c3290fd7fc4ccd53b2eb06bca6a83177ab256f/Screenshot%202021-07-05%20133107.png\"\n            }\n        }\n    }\n}"
 				}
 			]
 		},
@@ -3160,13 +3175,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/users/{{sellerId}}/offers.json",
+					"raw": "{{base_url}}/users/87479/offers.json",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
 						"users",
-						"{{sellerId}}",
+						"87479",
 						"offers.json"
 					]
 				}
