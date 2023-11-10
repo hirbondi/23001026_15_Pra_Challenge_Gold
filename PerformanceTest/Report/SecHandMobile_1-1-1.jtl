@@ -1,0 +1,17 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1699581951244,383,POST Seller Auth Register,201,Created,Thread Group 1-1-1 1-1,text,true,,569,422,1,1,https://market-final-project.binaracademy.org/auth/register,382,0,194
+1699581951631,174,POST Seller Sign In,201,Created,Thread Group 1-1-1 1-1,text,true,,489,293,1,1,https://market-final-project.binaracademy.org/auth/login,174,0,0
+1699581951805,255,POST Seller Add Product,201,Created,Thread Group 1-1-1 1-1,text,true,,662,50560,1,1,https://market-final-project.binaracademy.org/seller/product,255,0,0
+1699581952060,151,GET Seller List Product,200,OK,Thread Group 1-1-1 1-1,text,true,,715,344,1,1,https://market-final-project.binaracademy.org/seller/product,151,0,0
+1699581952211,264,GET Seller Get Product,200,OK,Thread Group 1-1-1 1-1,text,true,,713,350,1,1,https://market-final-project.binaracademy.org/seller/product/96787,264,0,0
+1699581952475,110,DELETE Seller Delete Product,200,OK,Thread Group 1-1-1 1-1,text,true,,312,372,1,1,https://market-final-project.binaracademy.org/seller/product/96787,110,0,0
+1699581952585,172,POST Seller Re-Add Product,201,Created,Thread Group 1-1-1 1-1,text,true,,676,50582,1,1,https://market-final-project.binaracademy.org/seller/product,172,0,0
+1699581952758,413,POST Buyer Auth Register,201,Created,Thread Group 1-1-1 1-1,text,true,,566,548,1,1,https://market-final-project.binaracademy.org/auth/register,413,0,0
+1699581953171,155,POST Buyer Sign In,201,Created,Thread Group 1-1-1 1-1,text,true,,485,419,1,1,https://market-final-project.binaracademy.org/auth/login,155,0,0
+1699581953326,292,GET Buyer List Product,200,OK,Thread Group 1-1-1 1-1,text,true,,1535,360,1,1,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,292,0,0
+1699581953618,79,GET Buyer Get Product,200,OK,Thread Group 1-1-1 1-1,text,true,,879,347,1,1,https://market-final-project.binaracademy.org/buyer/product/96788,79,0,0
+1699581953697,110,POST Buyer Create Order,201,Created,Thread Group 1-1-1 1-1,text,true,,672,411,1,1,https://market-final-project.binaracademy.org/buyer/order,110,0,0
+1699581953807,97,GET Buyer List Orders,200,OK,Thread Group 1-1-1 1-1,text,true,,1183,339,1,1,https://market-final-project.binaracademy.org/buyer/order,97,0,0
+1699581953906,86,GET Buyer Get Order,200,OK,Thread Group 1-1-1 1-1,text,true,,1181,345,1,1,https://market-final-project.binaracademy.org/buyer/order/46675,86,0,0
+1699581954026,100,PUT Buyer Update Offer,200,OK,Thread Group 1-1-1 1-1,text,true,,666,389,1,1,https://market-final-project.binaracademy.org/buyer/order/46675,100,0,0
+1699581954214,19,Debug Sampler,200,OK,Thread Group 1-1-1 1-1,text,true,,724,0,1,1,null,0,0,0

@@ -1,0 +1,866 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1699582111896,406,POST Seller Auth Register,201,Created,Thread Group 20-1-10 1-1,text,true,,569,422,8,8,https://market-final-project.binaracademy.org/auth/register,406,0,118
+1699582111944,358,POST Seller Auth Register,201,Created,Thread Group 20-1-10 1-2,text,true,,569,422,8,8,https://market-final-project.binaracademy.org/auth/register,358,0,94
+1699582111994,441,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-3,text,false,,334,422,11,11,https://market-final-project.binaracademy.org/auth/register,441,0,110
+1699582112102,333,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-5,text,false,,334,422,11,11,https://market-final-project.binaracademy.org/auth/register,333,0,100
+1699582112046,394,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-4,text,false,,334,422,11,11,https://market-final-project.binaracademy.org/auth/register,394,0,148
+1699582112152,321,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-6,text,false,,334,422,12,12,https://market-final-project.binaracademy.org/auth/register,321,0,107
+1699582112305,290,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-9,text,false,,334,422,14,14,https://market-final-project.binaracademy.org/auth/register,290,0,105
+1699582112303,366,POST Seller Sign In,201,Created,Thread Group 20-1-10 1-1,text,true,,489,293,16,16,https://market-final-project.binaracademy.org/auth/login,366,0,0
+1699582112436,236,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-3,text,false,,345,276,16,16,https://market-final-project.binaracademy.org/auth/login,236,0,0
+1699582112436,317,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-5,text,false,,345,276,18,18,https://market-final-project.binaracademy.org/auth/login,317,0,0
+1699582112305,447,POST Seller Sign In,201,Created,Thread Group 20-1-10 1-2,text,true,,489,293,18,18,https://market-final-project.binaracademy.org/auth/login,447,0,0
+1699582112201,551,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-7,text,false,,334,422,18,18,https://market-final-project.binaracademy.org/auth/register,551,0,112
+1699582112250,502,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-8,text,false,,334,422,18,18,https://market-final-project.binaracademy.org/auth/register,502,0,119
+1699582112440,334,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-4,text,false,,345,276,18,18,https://market-final-project.binaracademy.org/auth/login,334,0,0
+1699582112355,419,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-10,text,false,,334,422,18,18,https://market-final-project.binaracademy.org/auth/register,419,0,112
+1699582112474,435,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-6,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,435,0,0
+1699582112595,314,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-9,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,314,0,0
+1699582112499,410,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-13,text,false,,334,422,20,20,https://market-final-project.binaracademy.org/auth/register,410,0,102
+1699582112403,520,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-11,text,false,,334,422,20,20,https://market-final-project.binaracademy.org/auth/register,520,0,111
+1699582112454,556,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-12,text,false,,334,422,20,20,https://market-final-project.binaracademy.org/auth/register,556,0,95
+1699582112754,307,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-7,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,307,0,0
+1699582112601,486,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-15,text,false,,334,422,20,20,https://market-final-project.binaracademy.org/auth/register,486,0,127
+1699582112551,536,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-14,text,false,,334,422,20,20,https://market-final-project.binaracademy.org/auth/register,536,0,92
+1699582112754,333,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-8,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,333,0,0
+1699582112699,630,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-17,text,false,,334,422,20,20,https://market-final-project.binaracademy.org/auth/register,630,0,129
+1699582112753,576,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,50433,20,20,https://market-final-project.binaracademy.org/seller/product,576,0,0
+1699582112673,656,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,50353,20,20,https://market-final-project.binaracademy.org/seller/product,656,0,0
+1699582112648,681,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-16,text,false,,334,422,20,20,https://market-final-project.binaracademy.org/auth/register,681,0,163
+1699582112774,555,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-10,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,555,0,0
+1699582112774,723,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,50433,20,20,https://market-final-project.binaracademy.org/seller/product,723,0,0
+1699582112910,587,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-13,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,587,0,0
+1699582112748,751,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-18,text,false,,334,422,20,20,https://market-final-project.binaracademy.org/auth/register,751,0,119
+1699582112799,738,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-19,text,false,,334,422,20,20,https://market-final-project.binaracademy.org/auth/register,738,0,101
+1699582112923,831,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-11,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,831,0,0
+1699582112910,844,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,50409,20,20,https://market-final-project.binaracademy.org/seller/product,844,0,0
+1699582112910,856,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,50409,20,20,https://market-final-project.binaracademy.org/seller/product,856,0,0
+1699582113010,756,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-12,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,756,0,0
+1699582112848,918,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-20,text,false,,334,422,20,20,https://market-final-project.binaracademy.org/auth/register,918,0,121
+1699582113088,913,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-14,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,913,0,0
+1699582113088,913,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-15,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,913,0,0
+1699582113088,913,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,50393,20,20,https://market-final-project.binaracademy.org/seller/product,913,0,0
+1699582113062,939,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,50393,20,20,https://market-final-project.binaracademy.org/seller/product,939,0,0
+1699582113329,812,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,812,0,0
+1699582113329,812,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,812,0,0
+1699582113329,812,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-16,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,812,0,0
+1699582113329,837,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-17,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,837,0,0
+1699582113497,772,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,772,0,0
+1699582113537,735,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-19,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,735,0,0
+1699582113499,786,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-18,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,786,0,0
+1699582113497,862,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,50361,20,20,https://market-final-project.binaracademy.org/seller/product,862,0,0
+1699582113329,1030,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,50417,20,20,https://market-final-project.binaracademy.org/seller/product,1030,0,0
+1699582113767,717,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-20,text,false,,345,276,20,20,https://market-final-project.binaracademy.org/auth/login,717,0,0
+1699582113754,809,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,50385,20,20,https://market-final-project.binaracademy.org/seller/product,809,0,0
+1699582113766,797,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,50409,20,20,https://market-final-project.binaracademy.org/seller/product,797,0,0
+1699582113754,829,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,829,0,0
+1699582113766,817,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,817,0,0
+1699582114002,591,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,591,0,0
+1699582114002,678,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,678,0,0
+1699582114142,590,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,590,0,0
+1699582114002,730,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,50409,20,20,https://market-final-project.binaracademy.org/seller/product,730,0,0
+1699582114002,730,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,50401,20,20,https://market-final-project.binaracademy.org/seller/product,730,0,0
+1699582112670,2103,POST Seller Add Product,201,Created,Thread Group 20-1-10 1-1,text,true,,662,50576,20,20,https://market-final-project.binaracademy.org/seller/product,2103,0,0
+1699582114142,658,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,658,0,0
+1699582114142,679,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,50361,20,20,https://market-final-project.binaracademy.org/seller/product,679,0,0
+1699582114270,569,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,569,0,0
+1699582114166,673,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,50361,20,20,https://market-final-project.binaracademy.org/seller/product,673,0,0
+1699582114273,669,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,50401,20,20,https://market-final-project.binaracademy.org/seller/product,669,0,0
+1699582114285,676,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,50425,20,20,https://market-final-project.binaracademy.org/seller/product,676,0,0
+1699582114563,406,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,406,0,0
+1699582114359,622,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,622,0,0
+1699582114359,731,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,731,0,0
+1699582114563,527,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,527,0,0
+1699582114583,517,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,517,0,0
+1699582114484,616,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,50369,20,20,https://market-final-project.binaracademy.org/seller/product,616,0,0
+1699582112753,2347,POST Seller Add Product,201,Created,Thread Group 20-1-10 1-2,text,true,,662,50560,20,20,https://market-final-project.binaracademy.org/seller/product,2347,0,0
+1699582114583,546,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,546,0,0
+1699582114732,508,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,508,0,0
+1699582114732,508,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,508,0,0
+1699582114680,596,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,596,0,0
+1699582114594,682,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,682,0,0
+1699582114732,545,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,545,0,0
+1699582114801,586,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,586,0,0
+1699582114821,577,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,577,0,0
+1699582114840,592,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,592,0,0
+1699582114942,575,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,575,0,0
+1699582114840,690,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,690,0,0
+1699582114962,579,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,579,0,0
+1699582114969,580,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,580,0,0
+1699582114981,639,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,639,0,0
+1699582115090,564,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,564,0,0
+1699582115100,582,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,582,0,0
+1699582115100,582,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,582,0,0
+1699582115129,673,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,673,0,0
+1699582115240,580,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,580,0,0
+1699582115240,580,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,50447,20,20,https://market-final-project.binaracademy.org/seller/product,580,0,0
+1699582115090,730,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,730,0,0
+1699582115277,658,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,658,0,0
+1699582115277,674,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,674,0,0
+1699582115277,674,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,674,0,0
+1699582115387,572,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,50407,20,20,https://market-final-project.binaracademy.org/seller/product,572,0,0
+1699582115398,683,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,683,0,0
+1699582115432,661,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,661,0,0
+1699582114773,1347,GET Seller List Product,200,OK,Thread Group 20-1-10 1-1,text,true,,715,344,20,20,https://market-final-project.binaracademy.org/seller/product,1347,0,0
+1699582115517,603,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,603,0,0
+1699582115530,590,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,50431,20,20,https://market-final-project.binaracademy.org/seller/product,590,0,0
+1699582115549,678,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,678,0,0
+1699582115541,707,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,707,0,0
+1699582115620,647,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,647,0,0
+1699582115654,631,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,631,0,0
+1699582115682,668,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,50431,20,20,https://market-final-project.binaracademy.org/seller/product,668,0,0
+1699582115682,677,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,677,0,0
+1699582115802,577,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,50423,20,20,https://market-final-project.binaracademy.org/seller/product,577,0,0
+1699582115820,694,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,694,0,0
+1699582115820,710,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,710,0,0
+1699582115935,669,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,50423,20,20,https://market-final-project.binaracademy.org/seller/product,669,0,0
+1699582115100,1504,GET Seller List Product,200,OK,Thread Group 20-1-10 1-2,text,true,,715,344,20,20,https://market-final-project.binaracademy.org/seller/product,1504,0,0
+1699582115952,652,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,652,0,0
+1699582116120,629,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,629,0,0
+1699582115952,797,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,50423,20,20,https://market-final-project.binaracademy.org/seller/product,797,0,0
+1699582116081,734,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,734,0,0
+1699582116093,735,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,735,0,0
+1699582116248,626,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,626,0,0
+1699582116227,647,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,50383,20,20,https://market-final-project.binaracademy.org/seller/product,647,0,0
+1699582116359,624,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,624,0,0
+1699582116267,797,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,50447,20,20,https://market-final-project.binaracademy.org/seller/product,797,0,0
+1699582116514,550,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,50439,20,20,https://market-final-project.binaracademy.org/seller/product,550,0,0
+1699582115820,1244,POST Buyer Auth Register,201,Created,Thread Group 20-1-10 1-5,text,true,,566,405,20,20,https://market-final-project.binaracademy.org/auth/register,1244,0,0
+1699582116285,866,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,50415,20,20,https://market-final-project.binaracademy.org/seller/product,866,0,0
+1699582115960,1191,POST Buyer Auth Register,201,Created,Thread Group 20-1-10 1-3,text,true,,566,405,20,20,https://market-final-project.binaracademy.org/auth/register,1191,0,0
+1699582116530,621,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,50407,20,20,https://market-final-project.binaracademy.org/seller/product,621,0,0
+1699582116604,548,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-8,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,548,0,0
+1699582116120,1032,POST Buyer Auth Register,201,Created,Thread Group 20-1-10 1-4,text,true,,566,405,20,20,https://market-final-project.binaracademy.org/auth/register,1032,0,0
+1699582116120,1051,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,325,350,20,20,https://market-final-project.binaracademy.org/seller/product/96789,1051,0,0
+1699582116604,675,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,50383,20,20,https://market-final-project.binaracademy.org/seller/product,675,0,0
+1699582116749,560,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-7,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,560,0,0
+1699582116379,964,POST Buyer Auth Register,201,Created,Thread Group 20-1-10 1-6,text,true,,566,405,20,20,https://market-final-project.binaracademy.org/auth/register,964,0,0
+1699582116350,993,POST Buyer Auth Register,201,Created,Thread Group 20-1-10 1-9,text,true,,566,405,20,20,https://market-final-project.binaracademy.org/auth/register,993,0,0
+1699582116749,594,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,50415,20,20,https://market-final-project.binaracademy.org/seller/product,594,0,0
+1699582116828,575,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,50391,20,20,https://market-final-project.binaracademy.org/seller/product,575,0,0
+1699582116874,542,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-12,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,542,0,0
+1699582116874,570,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,50367,20,20,https://market-final-project.binaracademy.org/seller/product,570,0,0
+1699582116815,671,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,50407,20,20,https://market-final-project.binaracademy.org/seller/product,671,0,0
+1699582116984,525,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,50391,20,20,https://market-final-project.binaracademy.org/seller/product,525,0,0
+1699582117064,477,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-13,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,477,0,0
+1699582117064,570,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-10,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,570,0,0
+1699582117152,482,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-14,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,482,0,0
+1699582117064,570,POST Buyer Sign In,201,Created,Thread Group 20-1-10 1-5,text,true,,485,276,20,20,https://market-final-project.binaracademy.org/auth/login,570,0,0
+1699582117152,500,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-11,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,500,0,0
+1699582117152,589,POST Buyer Sign In,201,Created,Thread Group 20-1-10 1-3,text,true,,485,276,20,20,https://market-final-project.binaracademy.org/auth/login,589,0,0
+1699582117152,712,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-8,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,712,0,0
+1699582117279,585,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-15,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,585,0,0
+1699582117152,712,POST Buyer Sign In,201,Created,Thread Group 20-1-10 1-4,text,true,,485,276,20,20,https://market-final-project.binaracademy.org/auth/login,712,0,0
+1699582117310,563,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-7,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,563,0,0
+1699582117343,723,POST Buyer Sign In,201,Created,Thread Group 20-1-10 1-9,text,true,,485,276,20,20,https://market-final-project.binaracademy.org/auth/login,723,0,0
+1699582117343,737,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-19,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,737,0,0
+1699582117343,787,POST Buyer Sign In,201,Created,Thread Group 20-1-10 1-6,text,true,,485,276,20,20,https://market-final-project.binaracademy.org/auth/login,787,0,0
+1699582117416,714,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-12,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,714,0,0
+1699582117510,620,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-20,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,620,0,0
+1699582117444,686,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-18,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,686,0,0
+1699582117404,726,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-17,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,726,0,0
+1699582116604,1537,GET Seller Get Product,200,OK,Thread Group 20-1-10 1-2,text,true,,713,350,20,20,https://market-final-project.binaracademy.org/seller/product/96790,1537,0,0
+1699582117486,655,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-16,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,655,0,0
+1699582117634,578,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-10,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,578,0,0
+1699582117634,578,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-14,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,578,0,0
+1699582117542,670,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-13,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,670,0,0
+1699582117652,568,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-11,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,568,0,0
+1699582117864,466,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-15,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,466,0,0
+1699582117634,1361,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-5,text,true,,1535,360,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,1361,0,0
+1699582117742,1320,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-3,text,true,,1535,360,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,1320,0,0
+1699582117864,1237,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-4,text,true,,1535,360,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,1237,0,0
+1699582118080,1081,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-19,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1081,0,0
+1699582117864,1317,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-8,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,1317,0,0
+1699582118130,1129,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-17,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1129,0,0
+1699582118130,1148,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-20,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1148,0,0
+1699582118130,1190,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-18,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1190,0,0
+1699582117873,1646,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-7,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,1646,0,0
+1699582118142,1490,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-16,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1490,0,0
+1699582118066,1739,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-9,text,true,,1535,360,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,1739,0,0
+1699582118130,1880,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-12,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,1880,0,0
+1699582118130,2036,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-6,text,true,,1535,360,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2036,0,0
+1699582118212,2141,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-14,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2141,0,0
+1699582118212,2225,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-13,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2225,0,0
+1699582118220,2457,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-11,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2457,0,0
+1699582118212,3054,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-10,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,3054,0,0
+1699582118345,2957,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-15,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2957,0,0
+1699582119162,2706,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-19,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2706,0,0
+1699582119259,7054,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-17,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,7054,0,0
+1699582119278,10592,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-20,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,10592,0,0
+1699582119321,10548,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-18,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,10548,0,0
+1699582118142,14949,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,325,372,20,20,https://market-final-project.binaracademy.org/seller/product/96790,14949,0,0
+1699582119633,13641,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-16,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,13641,0,0
+1699582129870,64699,GET Buyer Get Product,502,Bad Gateway,Thread Group 20-1-10 1-20,text,false,,314,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,64699,0,0
+1699582129870,64699,GET Buyer Get Product,502,Bad Gateway,Thread Group 20-1-10 1-18,text,false,,314,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,64699,0,0
+1699582133091,64126,POST Seller Re-Add Product,504,Gateway Time-out,Thread Group 20-1-10 1-2,text,false,,329,50510,20,20,https://market-final-project.binaracademy.org/seller/product,64126,0,0
+1699582133274,64049,GET Buyer Get Product,502,Bad Gateway,Thread Group 20-1-10 1-16,text,false,,314,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,64049,0,0
+1699582117171,86198,DELETE Seller Delete Product,404,Not Found,Thread Group 20-1-10 1-1,text,false,,332,372,20,20,https://market-final-project.binaracademy.org/seller/product/96789,86198,0,0
+1699582194569,45608,POST Buyer Create Order,502,Bad Gateway,Thread Group 20-1-10 1-18,text,false,,314,265,20,20,https://market-final-project.binaracademy.org/buyer/order,45608,0,11003
+1699582126314,113863,GET Buyer Get Product,502,Bad Gateway,Thread Group 20-1-10 1-17,text,false,,314,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,113863,0,0
+1699582203369,36808,POST Seller Re-Add Product,502,Bad Gateway,Thread Group 20-1-10 1-1,text,false,,314,50558,20,20,https://market-final-project.binaracademy.org/seller/product,36808,0,4884
+1699582197324,42853,POST Buyer Create Order,502,Bad Gateway,Thread Group 20-1-10 1-16,text,false,,314,265,20,20,https://market-final-project.binaracademy.org/buyer/order,42853,0,9163
+1699582194569,45608,POST Buyer Create Order,502,Bad Gateway,Thread Group 20-1-10 1-20,text,false,,314,265,20,20,https://market-final-project.binaracademy.org/buyer/order,45608,0,10637
+1699582197218,42960,POST Buyer Auth Register,502,Bad Gateway,Thread Group 20-1-10 1-2,text,false,,314,548,20,20,https://market-final-project.binaracademy.org/auth/register,42960,0,9172
+1699582240177,5056,GET Buyer List Orders,502,Bad Gateway,Thread Group 20-1-10 1-18,text,false,,314,198,20,20,https://market-final-project.binaracademy.org/buyer/order,5056,0,0
+1699582240177,5058,POST Buyer Auth Register,502,Bad Gateway,Thread Group 20-1-10 1-1,text,false,,314,548,20,20,https://market-final-project.binaracademy.org/auth/register,5058,0,0
+1699582240177,5073,GET Buyer List Orders,502,Bad Gateway,Thread Group 20-1-10 1-20,text,false,,314,198,20,20,https://market-final-project.binaracademy.org/buyer/order,5073,0,0
+1699582240178,5106,POST Buyer Sign In,502,Bad Gateway,Thread Group 20-1-10 1-2,text,false,,314,403,20,20,https://market-final-project.binaracademy.org/auth/login,5106,0,0
+1699582240177,5108,GET Buyer List Orders,502,Bad Gateway,Thread Group 20-1-10 1-16,text,false,,314,198,20,20,https://market-final-project.binaracademy.org/buyer/order,5108,0,0
+1699582245235,4139,POST Buyer Sign In,502,Bad Gateway,Thread Group 20-1-10 1-1,text,false,,314,403,20,20,https://market-final-project.binaracademy.org/auth/login,4139,0,0
+1699582245234,4140,GET Buyer Get Order,502,Bad Gateway,Thread Group 20-1-10 1-18,text,false,,314,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,4140,0,0
+1699582245250,4130,GET Buyer Get Order,502,Bad Gateway,Thread Group 20-1-10 1-20,text,false,,314,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,4130,0,0
+1699582245285,4119,GET Buyer List Product,502,Bad Gateway,Thread Group 20-1-10 1-2,text,false,,314,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,4119,0,0
+1699582245285,4141,GET Buyer Get Order,502,Bad Gateway,Thread Group 20-1-10 1-16,text,false,,314,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,4141,0,0
+1699582249404,4522,GET Buyer Get Product,502,Bad Gateway,Thread Group 20-1-10 1-2,text,false,,314,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,4522,0,0
+1699582249380,4570,PUT Buyer Update Offer,502,Bad Gateway,Thread Group 20-1-10 1-20,text,false,,314,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,4570,0,0
+1699582249375,4575,PUT Buyer Update Offer,502,Bad Gateway,Thread Group 20-1-10 1-18,text,false,,314,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,4575,0,0
+1699582253951,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-20,text,true,,546,0,20,20,null,0,0,0
+1699582253951,2,Debug Sampler,200,OK,Thread Group 20-1-10 1-18,text,true,,546,0,20,20,null,0,0,0
+1699582249374,4653,GET Buyer List Product,502,Bad Gateway,Thread Group 20-1-10 1-1,text,false,,314,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,4653,0,0
+1699582249426,4629,PUT Buyer Update Offer,502,Bad Gateway,Thread Group 20-1-10 1-16,text,false,,314,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,4629,0,0
+1699582240177,13878,POST Buyer Create Order,502,Bad Gateway,Thread Group 20-1-10 1-17,text,false,,314,265,20,20,https://market-final-project.binaracademy.org/buyer/order,13878,0,9205
+1699582254056,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-16,text,true,,546,0,20,20,null,0,0,0
+1699582253928,4028,POST Buyer Create Order,502,Bad Gateway,Thread Group 20-1-10 1-2,text,false,,314,265,20,20,https://market-final-project.binaracademy.org/buyer/order,4028,0,0
+1699582253954,4070,POST Seller Auth Register,502,Bad Gateway,Thread Group 20-1-10 1-18,text,false,,314,408,20,20,https://market-final-project.binaracademy.org/auth/register,4070,0,0
+1699582253953,4071,POST Seller Auth Register,502,Bad Gateway,Thread Group 20-1-10 1-20,text,false,,314,408,20,20,https://market-final-project.binaracademy.org/auth/register,4071,0,0
+1699582254028,4042,GET Buyer Get Product,502,Bad Gateway,Thread Group 20-1-10 1-1,text,false,,314,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,4042,0,0
+1699582254058,4024,POST Seller Auth Register,502,Bad Gateway,Thread Group 20-1-10 1-16,text,false,,314,408,20,20,https://market-final-project.binaracademy.org/auth/register,4024,0,0
+1699582254056,4043,GET Buyer List Orders,502,Bad Gateway,Thread Group 20-1-10 1-17,text,false,,314,198,20,20,https://market-final-project.binaracademy.org/buyer/order,4043,0,0
+1699582258071,6091,POST Buyer Create Order,502,Bad Gateway,Thread Group 20-1-10 1-1,text,false,,314,265,20,20,https://market-final-project.binaracademy.org/buyer/order,6091,0,0
+1699582258099,6104,GET Buyer Get Order,502,Bad Gateway,Thread Group 20-1-10 1-17,text,false,,314,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,6104,0,0
+1699582264204,6601,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,6601,0,0
+1699582270804,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-17,text,true,,544,0,20,20,null,0,0,0
+1699582258024,16843,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-18,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,16843,0,12550
+1699582258024,16889,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-20,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,16889,0,12550
+1699582258083,16846,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-16,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,16846,0,12503
+1699582257956,16973,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,16973,0,12615
+1699582270806,4123,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-17,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,4123,0,0
+1699582264164,14495,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,14495,0,10706
+1699582274931,3877,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-17,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,3877,0,0
+1699582274931,3877,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,3877,0,0
+1699582274868,5949,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,50433,20,20,https://market-final-project.binaracademy.org/seller/product,5949,0,0
+1699582278660,2318,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,2318,0,0
+1699582274915,6148,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,50369,20,20,https://market-final-project.binaracademy.org/seller/product,6148,0,0
+1699582274932,6161,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,50417,20,20,https://market-final-project.binaracademy.org/seller/product,6161,0,0
+1699582278810,2403,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,2403,0,0
+1699582281212,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-2,text,true,,562,0,20,20,null,0,0,0
+1699582280817,2854,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,2854,0,0
+1699582280977,2830,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,2830,0,0
+1699582283807,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-1,text,true,,562,0,20,20,null,0,0,0
+1699582281062,2811,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,2811,0,0
+1699582281093,2838,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,2838,0,0
+1699582281212,2852,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-2,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,2852,0,0
+1699582283672,2921,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,2921,0,0
+1699582283808,2849,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-1,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,2849,0,0
+1699582283932,2726,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,2726,0,0
+1699582278808,7851,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,50377,20,20,https://market-final-project.binaracademy.org/seller/product,7851,0,0
+1699582283873,2785,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,2785,0,0
+1699582284064,2632,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-2,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,2632,0,0
+1699582121868,164849,GET Buyer Get Product,Non HTTP response code: org.apache.http.ConnectionClosedException,"Non HTTP response message: Premature end of Content-Length delimited message body (expected: 22,130,188; received: 4,795,526)",Thread Group 20-1-10 1-19,text,false,,1350,0,20,20,https://market-final-project.binaracademy.org/buyer/product/,65414,0,0
+1699582286593,3058,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,3058,0,0
+1699582286659,3048,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,3048,0,0
+1699582286659,3048,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,3048,0,0
+1699582286657,3050,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-1,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,3050,0,0
+1699582286658,3078,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,3078,0,0
+1699582286697,3039,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,50353,20,20,https://market-final-project.binaracademy.org/seller/product,3039,0,0
+1699582289651,2234,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,50447,20,20,https://market-final-project.binaracademy.org/seller/product,2234,0,0
+1699582289707,2351,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,50367,20,20,https://market-final-project.binaracademy.org/seller/product,2351,0,0
+1699582289736,2334,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,2334,0,0
+1699582289736,2334,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,2334,0,0
+1699582289707,2363,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,50399,20,20,https://market-final-project.binaracademy.org/seller/product,2363,0,0
+1699582286726,7354,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,7354,0,5144
+1699582291885,2215,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-18,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,2215,0,0
+1699582292059,2538,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-16,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,2538,0,0
+1699582292071,2538,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-20,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,2538,0,0
+1699582292071,2539,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,2539,0,0
+1699582292071,2553,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,2552,0,0
+1699582294080,3242,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,3242,0,0
+1699582294610,2986,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,2986,0,0
+1699582294609,2987,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-20,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,2987,0,0
+1699582294625,2971,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,50367,20,20,https://market-final-project.binaracademy.org/seller/product,2971,0,0
+1699582297322,2466,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,2466,0,0
+1699582297596,2568,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-17,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,2568,0,0
+1699582297596,2595,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,50367,20,20,https://market-final-project.binaracademy.org/seller/product,2595,0,0
+1699582297596,2921,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-20,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2921,0,0
+1699582118995,182002,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-5,text,true,,22130465,342,20,20,https://market-final-project.binaracademy.org/buyer/product/,7084,0,0
+1699582289707,11353,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,50361,20,20,https://market-final-project.binaracademy.org/seller/product,11353,0,0
+1699582299789,1398,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,1398,0,0
+1699582301188,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-19,text,true,,546,0,20,20,null,0,0,0
+1699582300191,1162,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-2,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,1162,0,0
+1699582300165,1188,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-17,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1188,0,0
+1699582294101,9393,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-18,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,9393,0,0
+1699582301059,3090,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,3090,0,0
+1699582294598,9630,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-16,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,9630,0,0
+1699582301189,5963,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-19,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,5963,0,0
+1699582301354,5798,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-2,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,5798,0,0
+1699582304149,3146,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,3146,0,0
+1699582300997,6501,POST Buyer Create Order,400,Bad Request,Thread Group 20-1-10 1-5,text,false,,364,406,20,20,https://market-final-project.binaracademy.org/buyer/order,6501,0,4420
+1699582303494,4007,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-18,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,4007,0,0
+1699582304227,3280,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-16,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,3280,0,0
+1699582307154,2526,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-19,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,2526,0,0
+1699582307296,2475,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,2475,0,0
+1699582307154,2683,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-2,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2683,0,0
+1699582307499,2472,GET Buyer List Orders,200,OK,Thread Group 20-1-10 1-5,text,true,,266,339,20,20,https://market-final-project.binaracademy.org/buyer/order,2472,0,0
+1699582301354,8701,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-17,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,8701,0,5038
+1699582309771,14295,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,50423,20,20,https://market-final-project.binaracademy.org/seller/product,14295,0,0
+1699582309680,14394,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,50433,20,20,https://market-final-project.binaracademy.org/seller/product,14394,0,0
+1699582309972,14117,GET Buyer Get Order,200,OK,Thread Group 20-1-10 1-5,text,true,,266,340,20,20,https://market-final-project.binaracademy.org/buyer/order/,14117,0,0
+1699582324091,7503,PUT Buyer Update Offer,404,Not Found,Thread Group 20-1-10 1-5,text,false,,454,384,20,20,https://market-final-project.binaracademy.org/buyer/order/,7503,0,0
+1699582324067,7527,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-1,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,7527,0,0
+1699582331595,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-5,text,true,,702,0,20,20,null,0,0,0
+1699582324074,7520,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,7520,0,0
+1699582331595,2409,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,2409,0,0
+1699582331595,2409,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-5,text,false,,334,549,20,20,https://market-final-project.binaracademy.org/auth/register,2409,0,0
+1699582120353,213671,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-14,text,true,,22130465,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,41023,0,0
+1699582334005,2076,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,2076,0,0
+1699582334005,2083,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-5,text,false,,345,403,20,20,https://market-final-project.binaracademy.org/auth/login,2083,0,0
+1699582331595,5333,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-1,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,5333,0,4448
+1699582119805,217848,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-9,text,true,,22130465,342,20,20,https://market-final-project.binaracademy.org/buyer/product/,35037,0,0
+1699582334024,3660,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,3660,0,2879
+1699582336928,915,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-1,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,915,0,0
+1699582119181,218807,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-8,text,true,,22130465,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,20102,0,0
+1699582337684,740,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,740,0,0
+1699582336082,3553,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,50399,20,20,https://market-final-project.binaracademy.org/seller/product,3553,0,0
+1699582338425,1249,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,1249,0,0
+1699582121267,219326,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-10,text,true,,22130465,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,57288,0,0
+1699582121302,220447,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-15,text,true,,22130465,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,61233,0,0
+1699582119062,223388,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-3,text,true,,22130465,342,20,20,https://market-final-project.binaracademy.org/buyer/product/,10774,0,0
+1699582337988,4953,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,4953,0,1667
+1699582339635,3305,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-19,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,3305,0,0
+1699582337654,5298,POST Buyer Create Order,400,Bad Request,Thread Group 20-1-10 1-9,text,false,,364,406,20,20,https://market-final-project.binaracademy.org/buyer/order,5298,0,1664
+1699582339674,3336,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,3336,0,0
+1699582343011,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-14,text,true,,546,0,20,20,null,0,0,0
+1699582336088,6926,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,50385,20,20,https://market-final-project.binaracademy.org/seller/product,6926,0,0
+1699582340595,2664,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,2664,0,1833
+1699582119101,224562,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-4,text,true,,22130465,342,20,20,https://market-final-project.binaracademy.org/buyer/product/,13952,0,0
+1699582342942,1039,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-19,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1039,0,0
+1699582342942,1039,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,1039,0,0
+1699582342953,1034,GET Buyer List Orders,200,OK,Thread Group 20-1-10 1-9,text,true,,266,339,20,20,https://market-final-project.binaracademy.org/buyer/order,1034,0,0
+1699582343011,981,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-14,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,981,0,0
+1699582343015,981,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,981,0,0
+1699582343259,1001,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,1001,0,0
+1699582341751,2998,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,2998,0,1759
+1699582343982,1525,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,1525,0,0
+1699582343992,1518,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-14,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,1518,0,0
+1699582343988,1528,GET Buyer Get Order,200,OK,Thread Group 20-1-10 1-9,text,true,,266,340,20,20,https://market-final-project.binaracademy.org/buyer/order/,1528,0,0
+1699582343996,1602,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,1602,0,0
+1699582342452,3228,POST Buyer Create Order,400,Bad Request,Thread Group 20-1-10 1-3,text,false,,364,406,20,20,https://market-final-project.binaracademy.org/buyer/order,3228,0,1737
+1699582344261,1550,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,1550,0,0
+1699582343982,1900,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-19,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,1900,0,0
+1699582344750,1398,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,1398,0,0
+1699582119519,226699,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-7,text,true,,22130465,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,26727,0,0
+1699582120166,226296,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-6,text,true,,22130465,342,20,20,https://market-final-project.binaracademy.org/buyer/product/,37295,0,0
+1699582345506,1770,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,1770,0,0
+1699582345810,1466,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,1466,0,0
+1699582345516,1760,PUT Buyer Update Offer,404,Not Found,Thread Group 20-1-10 1-9,text,false,,454,384,20,20,https://market-final-project.binaracademy.org/buyer/order/,1760,0,0
+1699582345680,1596,GET Buyer List Orders,200,OK,Thread Group 20-1-10 1-3,text,true,,266,339,20,20,https://market-final-project.binaracademy.org/buyer/order,1596,0,0
+1699582345597,1680,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,1680,0,0
+1699582347277,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-10,text,true,,546,0,20,20,null,0,0,0
+1699582347277,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-8,text,true,,545,0,20,20,null,0,0,0
+1699582347277,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-9,text,true,,702,0,20,20,null,0,0,0
+1699582346148,1537,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,1537,0,0
+1699582343664,4126,POST Buyer Create Order,400,Bad Request,Thread Group 20-1-10 1-4,text,false,,364,406,20,20,https://market-final-project.binaracademy.org/buyer/order,4126,0,2574
+1699582120437,233500,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-13,text,true,,22130465,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,52038,0,0
+1699582347277,12006,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-8,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,12006,0,0
+1699582347277,12173,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-10,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,12173,0,0
+1699582347277,12173,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-9,text,false,,334,549,20,20,https://market-final-project.binaracademy.org/auth/register,12173,0,0
+1699582345510,14106,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,50417,20,20,https://market-final-project.binaracademy.org/seller/product,14106,0,0
+1699582347686,11930,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,11930,0,0
+1699582359618,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-15,text,true,,546,0,20,20,null,0,0,0
+1699582347277,12462,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,50423,20,20,https://market-final-project.binaracademy.org/seller/product,12462,0,0
+1699582346219,13828,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,13828,0,2635
+1699582346463,13718,POST Buyer Create Order,400,Bad Request,Thread Group 20-1-10 1-6,text,false,,364,406,20,20,https://market-final-project.binaracademy.org/buyer/order,13718,0,2590
+1699582347277,12931,GET Buyer Get Order,200,OK,Thread Group 20-1-10 1-3,text,true,,266,340,20,20,https://market-final-project.binaracademy.org/buyer/order/,12931,0,0
+1699582347791,12417,GET Buyer List Orders,200,OK,Thread Group 20-1-10 1-4,text,true,,266,339,20,20,https://market-final-project.binaracademy.org/buyer/order,12417,0,0
+1699582359284,8100,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-8,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,8100,0,0
+1699582359451,7945,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-10,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,7945,0,0
+1699582359451,7945,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-9,text,false,,345,403,20,20,https://market-final-project.binaracademy.org/auth/login,7945,0,0
+1699582359618,7839,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,7839,0,0
+1699582359618,7839,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-15,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,7839,0,0
+1699582359739,7718,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-5,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,7718,0,0
+1699582360048,7421,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,7421,0,0
+1699582360181,7288,GET Buyer List Orders,200,OK,Thread Group 20-1-10 1-6,text,true,,266,339,20,20,https://market-final-project.binaracademy.org/buyer/order,7288,0,0
+1699582360208,7261,PUT Buyer Update Offer,404,Not Found,Thread Group 20-1-10 1-3,text,false,,454,384,20,20,https://market-final-project.binaracademy.org/buyer/order/,7261,0,0
+1699582360208,7261,GET Buyer Get Order,200,OK,Thread Group 20-1-10 1-4,text,true,,266,340,20,20,https://market-final-project.binaracademy.org/buyer/order/,7261,0,0
+1699582367469,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-3,text,true,,701,0,20,20,null,0,0,0
+1699582367457,1800,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-15,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,1800,0,0
+1699582367457,1864,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,1864,0,0
+1699582367469,1943,GET Buyer Get Order,200,OK,Thread Group 20-1-10 1-6,text,true,,266,340,20,20,https://market-final-project.binaracademy.org/buyer/order/,1943,0,0
+1699582367469,2173,PUT Buyer Update Offer,404,Not Found,Thread Group 20-1-10 1-4,text,false,,454,384,20,20,https://market-final-project.binaracademy.org/buyer/order/,2173,0,0
+1699582369642,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-4,text,true,,702,0,20,20,null,0,0,0
+1699582367469,2171,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,2171,0,0
+1699582367469,2200,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-3,text,false,,334,549,20,20,https://market-final-project.binaracademy.org/auth/register,2200,0,0
+1699582353937,16026,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,16026,0,13972
+1699582369347,1328,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,1328,0,0
+1699582369412,1317,PUT Buyer Update Offer,404,Not Found,Thread Group 20-1-10 1-6,text,false,,454,384,20,20,https://market-final-project.binaracademy.org/buyer/order/,1317,0,0
+1699582370729,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-6,text,true,,702,0,20,20,null,0,0,0
+1699582369669,1211,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-3,text,false,,345,403,20,20,https://market-final-project.binaracademy.org/auth/login,1211,0,0
+1699582369643,1237,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-4,text,false,,334,549,20,20,https://market-final-project.binaracademy.org/auth/register,1237,0,0
+1699582369643,1237,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,1237,0,0
+1699582370881,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-7,text,true,,545,0,20,20,null,0,0,0
+1699582369963,1134,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,1134,0,0
+1699582367457,4388,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-5,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,4388,0,3000
+1699582370729,1549,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-6,text,false,,334,549,20,20,https://market-final-project.binaracademy.org/auth/register,1549,0,0
+1699582370881,1633,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-4,text,false,,345,403,20,20,https://market-final-project.binaracademy.org/auth/login,1633,0,0
+1699582370882,1632,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-7,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,1632,0,0
+1699582371097,1537,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,1537,0,0
+1699582371845,1879,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-5,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,1879,0,0
+1699582372278,1651,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-6,text,false,,345,403,20,20,https://market-final-project.binaracademy.org/auth/login,1651,0,0
+1699582372515,1950,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-7,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,1950,0,0
+1699582372634,2089,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,2089,0,0
+1699582374724,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-13,text,true,,546,0,20,20,null,0,0,0
+1699582307508,68115,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-16,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,25242,0,0
+1699582367384,8523,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,50385,20,20,https://market-final-project.binaracademy.org/seller/product,8523,0,0
+1699582374724,8349,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-13,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,8349,0,0
+1699582367396,15828,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,50433,20,20,https://market-final-project.binaracademy.org/seller/product,15828,0,0
+1699582375907,7357,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,7357,0,0
+1699582367396,16778,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,50393,20,20,https://market-final-project.binaracademy.org/seller/product,16778,0,0
+1699582369257,15670,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,50433,20,20,https://market-final-project.binaracademy.org/seller/product,15670,0,0
+1699582373930,12253,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,50425,20,20,https://market-final-project.binaracademy.org/seller/product,12253,0,0
+1699582370881,16814,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,50385,20,20,https://market-final-project.binaracademy.org/seller/product,16814,0,0
+1699582375623,15156,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,15156,0,5717
+1699582383073,8312,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-13,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,8312,0,0
+1699582383224,8282,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,8282,0,0
+1699582383264,8248,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,8248,0,0
+1699582384174,8048,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,8048,0,0
+1699582384927,7978,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,7978,0,0
+1699582372515,21836,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,50409,20,20,https://market-final-project.binaracademy.org/seller/product,21836,0,0
+1699582387695,6764,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,6764,0,0
+1699582374466,20082,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,50401,20,20,https://market-final-project.binaracademy.org/seller/product,20082,0,0
+1699582390779,5855,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,5855,0,0
+1699582120010,276760,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-12,text,true,,22130465,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,29626,0,0
+1699582370675,26312,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,50407,20,20,https://market-final-project.binaracademy.org/seller/product,26312,0,0
+1699582391506,5736,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,5736,0,0
+1699582391512,5730,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,5730,0,0
+1699582392222,5869,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,5869,0,0
+1699582392905,5329,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,5329,0,0
+1699582394351,4683,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,4683,0,0
+1699582394459,4628,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,4628,0,0
+1699582394548,4540,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,4540,0,0
+1699582307502,92659,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-18,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,28513,0,0
+1699582386183,14065,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,14065,0,0
+1699582396636,4144,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,4144,0,0
+1699582397243,3857,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,3857,0,0
+1699582398235,3489,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,3489,0,0
+1699582399035,3001,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,3001,0,0
+1699582399088,2972,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,2972,0,0
+1699582399090,2970,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,2970,0,0
+1699582400249,2027,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,2027,0,0
+1699582400779,1618,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,1618,0,0
+1699582402398,2,Debug Sampler,200,OK,Thread Group 20-1-10 1-16,text,true,,546,0,20,20,null,0,0,0
+1699582402035,1959,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,1959,0,0
+1699582402277,1860,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,1860,0,0
+1699582300517,103581,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-20,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,10718,0,0
+1699582402060,1950,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,1950,0,0
+1699582396771,7422,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,7422,0,5587
+1699582402400,1839,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-16,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,1839,0,0
+1699582396988,7289,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-14,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,7289,0,5546
+1699582398092,6977,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,6977,0,5188
+1699582402059,4114,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,50407,20,20,https://market-final-project.binaracademy.org/seller/product,4114,0,0
+1699582400161,6241,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,6241,0,3961
+1699582404153,2413,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,50383,20,20,https://market-final-project.binaracademy.org/seller/product,2413,0,0
+1699582404153,2413,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,50439,20,20,https://market-final-project.binaracademy.org/seller/product,2413,0,0
+1699582404276,2342,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-14,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,2342,0,0
+1699582404239,2379,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-16,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,2379,0,0
+1699582404192,2426,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,2426,0,0
+1699582401724,5629,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,50439,20,20,https://market-final-project.binaracademy.org/seller/product,5629,0,0
+1699582391385,16633,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,50409,20,20,https://market-final-project.binaracademy.org/seller/product,16633,0,0
+1699582337858,70163,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-1,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,7070,0,0
+1699582406402,1731,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,1731,0,0
+1699582406618,1980,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,50425,20,20,https://market-final-project.binaracademy.org/seller/product,1980,0,0
+1699582406619,2041,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,2041,0,0
+1699582406618,2058,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-14,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2058,0,0
+1699582408018,1277,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,1277,0,0
+1699582404153,5142,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,5142,0,3903
+1699582408133,1253,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,1253,0,0
+1699582397243,12363,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,50423,20,20,https://market-final-project.binaracademy.org/seller/product,12363,0,0
+1699582408598,1373,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,1373,0,0
+1699582408660,1441,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,1441,0,0
+1699582410101,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-12,text,true,,546,0,20,20,null,0,0,0
+1699582406174,5139,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-3,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,5139,0,3013
+1699582409295,2118,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,2118,0,0
+1699582409295,2118,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,2118,0,0
+1699582409386,4656,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,4656,0,0
+1699582406566,7476,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-7,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,7476,0,2887
+1699582406566,7476,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-6,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,7476,0,2886
+1699582414042,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-18,text,true,,546,0,20,20,null,0,0,0
+1699582401099,12987,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,50375,20,20,https://market-final-project.binaracademy.org/seller/product,12987,0,3201
+1699582407353,6814,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-15,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,6814,0,2750
+1699582408022,6185,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,6185,0,2669
+1699582410101,4106,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-12,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,4106,0,0
+1699582411313,3012,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-3,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,3012,0,0
+1699582405068,9406,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,50407,20,20,https://market-final-project.binaracademy.org/seller/product,9406,0,0
+1699582409605,4880,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-8,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,4880,0,2633
+1699582411413,3073,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,3073,0,0
+1699582403995,10491,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,50447,20,20,https://market-final-project.binaracademy.org/seller/product,10491,0,3996
+1699582409971,4577,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,4577,0,0
+1699582411413,3143,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,3143,0,0
+1699582414042,1729,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-6,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1729,0,0
+1699582414086,1717,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-10,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,1717,0,0
+1699582414043,1760,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-18,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,1760,0,0
+1699582414042,1761,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-7,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1761,0,0
+1699582414167,1689,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-15,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1689,0,0
+1699582414207,1672,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,1672,0,0
+1699582414207,1684,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-12,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,1684,0,0
+1699582414548,1807,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,1807,0,0
+1699582414486,1830,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-8,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1830,0,0
+1699582414486,1830,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-4,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,1830,0,0
+1699582414474,1842,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-9,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,1842,0,0
+1699582414556,1822,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,1822,0,0
+1699582416378,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-20,text,true,,546,0,20,20,null,0,0,0
+1699582414325,2061,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-3,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2061,0,0
+1699582415816,1592,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-18,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,1592,0,0
+1699582415816,1661,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-10,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1661,0,0
+1699582415880,1881,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,1881,0,0
+1699582415816,2082,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-7,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2082,0,0
+1699582415771,2196,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-6,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2196,0,0
+1699582416366,1669,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-9,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1669,0,0
+1699582416366,1694,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-4,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,1694,0,0
+1699582416366,1808,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,50431,20,20,https://market-final-project.binaracademy.org/seller/product,1808,0,0
+1699582416379,1882,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-20,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,1882,0,0
+1699582415856,2513,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-15,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2513,0,0
+1699582416366,2252,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-8,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2252,0,0
+1699582310057,109195,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-17,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,23542,0,0
+1699582309840,110363,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-2,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,24418,0,0
+1699582120677,304213,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-11,text,true,,22130465,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,61255,0,0
+1699582417761,7603,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,7603,0,0
+1699582425364,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-1,text,true,,545,0,20,20,null,0,0,0
+1699582418261,7666,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-20,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,7666,0,0
+1699582418175,7803,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-16,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,7803,0,0
+1699582418060,9733,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-4,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,9733,0,0
+1699582417408,15136,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,50361,20,20,https://market-final-project.binaracademy.org/seller/product,15136,0,0
+1699582419253,13537,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,13537,0,7805
+1699582425979,6854,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-16,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,6854,0,0
+1699582425365,7468,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-1,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,7468,0,0
+1699582418036,15075,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-9,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,15075,0,0
+1699582417477,15755,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-10,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,15755,0,0
+1699582415892,22318,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,50433,20,20,https://market-final-project.binaracademy.org/seller/product,22318,0,0
+1699582424892,13603,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,13603,0,8088
+1699582432834,5660,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-1,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,5660,0,0
+1699582425927,12567,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,50353,20,20,https://market-final-project.binaracademy.org/seller/product,12567,0,0
+1699582420204,18291,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,18291,0,9365
+1699582414486,24205,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,50391,20,20,https://market-final-project.binaracademy.org/seller/product,24205,0,3094
+1699582432790,5901,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,5901,0,0
+1699582432545,6146,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,6146,0,0
+1699582432833,9068,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-16,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,9068,0,0
+1699582438495,4064,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,4064,0,0
+1699582438211,4348,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,4348,0,0
+1699582438691,3868,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-13,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,3868,0,0
+1699582438494,4213,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,4213,0,0
+1699582438691,4025,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,4025,0,0
+1699582438497,4219,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,4219,0,0
+1699582438691,4250,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,4250,0,0
+1699582345881,102958,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-19,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,21769,0,0
+1699582442941,7221,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,7221,0,0
+1699582442717,7445,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,7445,0,0
+1699582442559,7603,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-13,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,7603,0,0
+1699582438494,11669,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,50433,20,20,https://market-final-project.binaracademy.org/seller/product,11669,0,0
+1699582373724,76439,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-5,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,22327,0,0
+1699582450163,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-17,text,true,,544,0,20,20,null,0,0,0
+1699582442559,7610,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,7610,0,0
+1699582442559,7610,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,7610,0,0
+1699582442708,7461,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,7461,0,0
+1699582442717,7452,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,7452,0,0
+1699582450169,5613,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,5613,0,0
+1699582450169,5613,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,5613,0,0
+1699582455781,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-2,text,true,,545,0,20,20,null,0,0,0
+1699582450169,5650,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,5650,0,0
+1699582450163,5656,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-17,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,5656,0,0
+1699582455818,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-11,text,true,,546,0,20,20,null,0,0,0
+1699582450169,5674,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,5674,0,0
+1699582450163,6104,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-13,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,6104,0,0
+1699582450163,6074,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,6074,0,0
+1699582450163,6074,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,6074,0,1563
+1699582450162,6065,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,50375,20,20,https://market-final-project.binaracademy.org/seller/product,6065,0,0
+1699582448839,7388,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,7388,0,2729
+1699582455782,1816,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-2,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,1816,0,0
+1699582455781,1833,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-20,text,false,,344,50439,20,20,https://market-final-project.binaracademy.org/seller/product,1833,0,0
+1699582455818,1797,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-17,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,1797,0,0
+1699582455819,1795,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-11,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,1795,0,0
+1699582456336,1625,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,1625,0,0
+1699582456336,1639,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,1639,0,0
+1699582456336,1640,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-18,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,1640,0,0
+1699582456336,1640,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,1640,0,0
+1699582457599,16489,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-2,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,16489,0,0
+1699582455842,18889,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,50367,20,20,https://market-final-project.binaracademy.org/seller/product,18889,0,0
+1699582457976,17000,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,17000,0,0
+1699582457976,17000,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,17000,0,0
+1699582457615,18206,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,50417,20,20,https://market-final-project.binaracademy.org/seller/product,18206,0,0
+1699582457962,19723,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,19723,0,0
+1699582457615,20070,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-20,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,20070,0,0
+1699582474090,3879,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,50369,20,20,https://market-final-project.binaracademy.org/seller/product,3879,0,0
+1699582457976,20006,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-18,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,20006,0,0
+1699582457615,20735,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-11,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,20735,0,0
+1699582474978,3419,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,3419,0,0
+1699582474977,3420,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,3420,0,0
+1699582478397,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-5,text,true,,545,0,20,20,null,0,0,0
+1699582478398,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-19,text,true,,546,0,20,20,null,0,0,0
+1699582475823,3129,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,3129,0,0
+1699582477969,2702,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,2702,0,0
+1699582478398,2543,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-5,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,2543,0,0
+1699582478399,2568,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-19,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,2568,0,0
+1699582478952,2400,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,2400,0,0
+1699582474732,8474,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-12,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,8474,0,6115
+1699582480942,2374,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-5,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,2374,0,0
+1699582480968,2348,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-19,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,2348,0,0
+1699582477687,7751,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-20,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,7751,0,5110
+1699582483206,2622,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-12,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,2622,0,0
+1699582477983,9138,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-18,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,9138,0,5043
+1699582485438,3135,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-20,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,3135,0,0
+1699582480671,7975,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,7975,0,4972
+1699582485846,3094,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-12,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,3094,0,0
+1699582481353,7929,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,7929,0,5039
+1699582488646,5930,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,5930,0,0
+1699582477686,16916,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-1,text,false,,344,50407,20,20,https://market-final-project.binaracademy.org/seller/product,16916,0,5111
+1699582478351,16698,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,50353,20,20,https://market-final-project.binaracademy.org/seller/product,16698,0,0
+1699582483316,12287,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,50385,20,20,https://market-final-project.binaracademy.org/seller/product,12287,0,0
+1699582483316,23723,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,50361,20,20,https://market-final-project.binaracademy.org/seller/product,23723,0,0
+1699582494603,12436,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-1,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,12436,0,0
+1699582495603,11572,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,11572,0,0
+1699582489282,17893,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,50383,20,20,https://market-final-project.binaracademy.org/seller/product,17893,0,0
+1699582495049,12430,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,12430,0,8992
+1699582507039,3515,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-1,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,3515,0,0
+1699582507039,3527,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,3527,0,0
+1699582507175,3481,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,3480,0,0
+1699582507176,3483,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-17,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,3483,0,0
+1699582507479,3333,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,3333,0,0
+1699582494576,20276,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,50391,20,20,https://market-final-project.binaracademy.org/seller/product,20276,0,0
+1699582510659,4298,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-17,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,4298,0,0
+1699582510554,4732,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-1,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,4732,0,0
+1699582510813,4475,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,4475,0,0
+1699582514852,4976,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-2,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,4975,0,0
+1699582514957,5066,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-17,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,5066,0,0
+1699582510565,13841,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,13841,0,9084
+1699582519829,4803,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-2,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,4803,0,0
+1699582510656,20638,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,20638,0,10109
+1699582524407,7068,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,7068,0,0
+1699582524664,7946,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-2,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,7946,0,0
+1699582515288,21021,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-11,text,false,,344,50383,20,20,https://market-final-project.binaracademy.org/seller/product,21021,0,0
+1699582536310,10390,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-11,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,10390,0,0
+1699582408676,141956,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-14,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,8470,0,0
+1699582546700,4040,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-11,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,4040,0,0
+1699582433111,120302,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-9,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,18866,0,0
+1699582550789,4159,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-11,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,4159,0,0
+1699582531476,29852,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-19,text,false,,344,50407,20,20,https://market-final-project.binaracademy.org/seller/product,29852,0,0
+1699582531296,30061,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,50439,20,20,https://market-final-project.binaracademy.org/seller/product,30061,0,0
+1699582550633,10792,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,10792,0,7073
+1699582553413,8530,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,8530,0,5552
+1699582561328,4260,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-19,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,4260,0,0
+1699582561356,4234,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-5,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,4234,0,0
+1699582561425,4208,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,4208,0,0
+1699582565588,2083,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-19,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,2083,0,0
+1699582565590,2081,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-5,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,2081,0,0
+1699582565634,2037,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,2037,0,0
+1699582567671,1867,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,1867,0,0
+1699582569538,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-14,text,true,,546,0,20,20,null,0,0,0
+1699582561943,7693,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,7693,0,0
+1699582567671,2283,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-19,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2283,0,0
+1699582567671,2369,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-5,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,2369,0,0
+1699582569539,1273,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-14,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,1273,0,0
+1699582569636,1270,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,1270,0,0
+1699582570905,4336,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,4336,0,0
+1699582570812,4429,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-14,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,4429,0,0
+1699582575241,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-9,text,true,,545,0,20,20,null,0,0,0
+1699582575241,3164,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,50377,20,20,https://market-final-project.binaracademy.org/seller/product,3164,0,0
+1699582578405,314,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,314,0,0
+1699582578719,469,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,469,0,0
+1699582579188,669,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,669,0,0
+1699582579857,11398,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-14,text,false,,344,50439,20,20,https://market-final-project.binaracademy.org/seller/product,11398,0,0
+1699582575241,16014,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-9,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,16014,0,0
+1699582591256,198,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-14,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,198,0,0
+1699582591256,239,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-9,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,239,0,0
+1699582591455,78,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-14,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,78,0,0
+1699582591495,285,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,50425,20,20,https://market-final-project.binaracademy.org/seller/product,285,0,0
+1699582591533,318,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-14,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,318,0,0
+1699582591781,99,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,99,0,0
+1699582591881,88,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,88,0,0
+1699582591969,1271,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,1271,0,0
+1699582427793,169457,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-4,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,18899,0,0
+1699582417967,180614,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-6,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,16962,0,0
+1699582593240,19282,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,50399,20,20,https://market-final-project.binaracademy.org/seller/product,19282,0,0
+1699582597250,16099,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,16099,0,657
+1699582598581,14768,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,14768,0,908
+1699582612522,7877,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-9,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,7877,0,0
+1699582613349,9032,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,9032,0,0
+1699582613349,11099,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,11099,0,0
+1699582417898,207647,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-7,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,17394,0,0
+1699582622382,5124,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,5124,0,0
+1699582624448,5047,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,5047,0,0
+1699582416386,221355,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-3,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,13503,0,0
+1699582629495,8275,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,8275,0,0
+1699582637770,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-4,text,true,,545,0,20,20,null,0,0,0
+1699582627507,10265,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,10265,0,0
+1699582637772,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-6,text,true,,545,0,20,20,null,0,0,0
+1699582620399,17386,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-9,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,17386,0,10495
+1699582625546,16867,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,16867,0,12231
+1699582637771,4642,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-4,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,4642,0,0
+1699582637773,4640,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-6,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,4640,0,0
+1699582637786,4921,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-9,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,4921,0,0
+1699582642414,5202,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-6,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,5202,0,0
+1699582642414,5202,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-4,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,5202,0,0
+1699582642414,5202,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,5202,0,0
+1699582456336,193987,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-13,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,21049,0,0
+1699582647617,3499,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,3499,0,0
+1699582651116,2742,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,2742,0,0
+1699582653858,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-7,text,true,,545,0,20,20,null,0,0,0
+1699582637742,16621,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,16621,0,13742
+1699582647617,9082,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,50425,20,20,https://market-final-project.binaracademy.org/seller/product,9082,0,0
+1699582647617,9131,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,50433,20,20,https://market-final-project.binaracademy.org/seller/product,9131,0,0
+1699582653858,2890,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-7,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,2890,0,0
+1699582654364,2630,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,2630,0,0
+1699582650324,8094,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,8094,0,5361
+1699582656699,3210,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,3210,0,0
+1699582656749,3312,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,3312,0,0
+1699582656749,3312,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-7,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,3312,0,0
+1699582656994,3379,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,3379,0,0
+1699582658419,3847,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,3847,0,0
+1699582660061,3880,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,50433,20,20,https://market-final-project.binaracademy.org/seller/product,3880,0,0
+1699582660373,3896,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,3896,0,0
+1699582664269,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-3,text,true,,544,0,20,20,null,0,0,0
+1699582418369,246827,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-15,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,22246,0,0
+1699582662266,4352,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,4352,0,0
+1699582663942,4232,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,4232,0,0
+1699582664270,4211,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-3,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,4211,0,0
+1699582666619,6342,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,6342,0,0
+1699582672961,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-13,text,true,,546,0,20,20,null,0,0,0
+1699582668174,9342,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,9342,0,0
+1699582668481,9824,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-3,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,9824,0,0
+1699582441901,239389,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-16,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,15525,0,4850
+1699582672962,8931,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-13,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,8931,0,0
+1699582677516,6181,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,6181,0,0
+1699582678306,5788,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,50353,20,20,https://market-final-project.binaracademy.org/seller/product,5788,0,0
+1699582660061,24469,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,24469,0,19565
+1699582659909,24563,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,24562,0,18870
+1699582681894,4355,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-13,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,4355,0,0
+1699582684094,3656,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,3656,0,0
+1699582683696,4054,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-7,text,false,,344,50431,20,20,https://market-final-project.binaracademy.org/seller/product,4054,0,0
+1699582418618,269140,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-8,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,21802,0,0
+1699582684564,3594,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,3594,0,0
+1699582684564,3614,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,3614,0,0
+1699582665196,23382,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,23382,0,20050
+1699582687751,3388,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,3388,0,0
+1699582688578,3385,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,3385,0,0
+1699582691141,3563,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,3563,0,0
+1699582691964,3639,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,3639,0,0
+1699582681291,15952,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,15952,0,12144
+1699582520025,177618,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-17,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,25580,0,0
+1699582687751,10460,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-7,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,10460,0,6896
+1699582687802,10410,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,10410,0,6860
+1699582694704,3508,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-3,text,false,,344,50415,20,20,https://market-final-project.binaracademy.org/seller/product,3508,0,0
+1699582688159,10356,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-6,text,false,,344,50423,20,20,https://market-final-project.binaracademy.org/seller/product,10356,0,0
+1699582688179,10435,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-4,text,false,,344,50423,20,20,https://market-final-project.binaracademy.org/seller/product,10435,0,0
+1699582695603,3523,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,3523,0,0
+1699582699127,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-15,text,true,,546,0,20,20,null,0,0,0
+1699582686249,14094,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,50377,20,20,https://market-final-project.binaracademy.org/seller/product,14094,0,0
+1699582697243,3809,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,3809,0,0
+1699582433232,268096,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-10,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,16396,0,0
+1699582698212,3523,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-7,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,3523,0,0
+1699582698213,3523,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,3523,0,0
+1699582698515,3477,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-6,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,3477,0,0
+1699582698614,3409,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-4,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,3409,0,0
+1699582699127,3245,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-15,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,3245,0,0
+1699582488940,213551,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-12,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,25585,0,0
+1699582700344,3172,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,3172,0,0
+1699582701052,3233,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,3233,0,0
+1699582701765,3638,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,3638,0,0
+1699582701992,3563,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-6,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,3563,0,0
+1699582701765,3821,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-7,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,3821,0,0
+1699582702024,3563,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-4,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,3563,0,0
+1699582702372,3578,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-15,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,3578,0,0
+1699582703516,3880,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,3880,0,0
+1699582704286,4112,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,4112,0,0
+1699582708398,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-16,text,true,,546,0,20,20,null,0,0,0
+1699582705404,4635,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,243,20,20,https://market-final-project.binaracademy.org/buyer/order/,4635,0,0
+1699582710039,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-8,text,true,,545,0,20,20,null,0,0,0
+1699582705556,5378,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-6,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,5378,0,0
+1699582705587,5540,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-4,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,5540,0,0
+1699582705951,5348,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,50353,20,20,https://market-final-project.binaracademy.org/seller/product,5348,0,0
+1699582708399,7346,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-16,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,7346,0,0
+1699582707396,8349,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,224,20,20,https://market-final-project.binaracademy.org/seller/product/,8349,0,0
+1699582710039,5718,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-8,text,false,,334,408,20,20,https://market-final-project.binaracademy.org/auth/register,5718,0,0
+1699582697670,18430,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,18430,0,12799
+1699582698213,19096,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-3,text,false,,334,405,20,20,https://market-final-project.binaracademy.org/auth/register,19096,0,13006
+1699582711299,6151,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,201,20,20,https://market-final-project.binaracademy.org/seller/product,6151,0,0
+1699582702491,35976,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,35976,0,15353
+1699582715758,22735,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-8,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,22735,0,0
+1699582717311,21182,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-3,text,false,,345,260,20,20,https://market-final-project.binaracademy.org/auth/login,21182,0,0
+1699582715746,22747,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-16,text,false,,345,262,20,20,https://market-final-project.binaracademy.org/auth/login,22747,0,0
+1699582717451,21043,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,202,20,20,https://market-final-project.binaracademy.org/seller/product/,21043,0,0
+1699582716101,22396,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,22396,0,0
+1699582701329,37168,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,265,20,20,https://market-final-project.binaracademy.org/buyer/order,37168,0,14430
+1699582570040,168770,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-5,text,true,,22130925,201,20,20,https://market-final-project.binaracademy.org/buyer/product/,20461,0,0
+1699582738498,3546,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,3546,0,0
+1699582738469,3578,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,198,20,20,https://market-final-project.binaracademy.org/buyer/order,3578,0,0
+1699582738493,3755,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-3,text,true,,1535,219,20,20,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,3755,0,0
+1699582739402,2847,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,199,20,20,https://market-final-project.binaracademy.org/buyer/order/,2847,0,0
+1699582487122,255454,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-18,text,true,,22130925,201,19,19,https://market-final-project.binaracademy.org/buyer/product/,11278,0,0
+1699582742248,2656,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,199,18,18,https://market-final-project.binaracademy.org/buyer/order/,2656,0,0
+1699582742249,2655,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,243,18,18,https://market-final-project.binaracademy.org/buyer/order/,2655,0,0
+1699582744905,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-17,text,true,,544,0,18,18,null,0,0,0
+1699582742249,2726,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,199,18,18,https://market-final-project.binaracademy.org/buyer/order/,2726,0,0
+1699582738493,11152,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,224,17,17,https://market-final-project.binaracademy.org/seller/product/,11152,0,6365
+1699582744905,4741,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,243,17,17,https://market-final-project.binaracademy.org/buyer/order/,4741,0,0
+1699582749646,1,Debug Sampler,200,OK,Thread Group 20-1-10 1-10,text,true,,546,0,17,17,null,0,0,0
+1699582744976,4687,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,243,17,17,https://market-final-project.binaracademy.org/buyer/order/,4687,0,0
+1699582749664,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-12,text,true,,546,0,17,17,null,0,0,0
+1699582744906,4759,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-17,text,false,,334,408,17,17,https://market-final-project.binaracademy.org/auth/register,4759,0,0
+1699582738493,13455,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,50409,17,17,https://market-final-project.binaracademy.org/seller/product,13455,0,0
+1699582738493,14576,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,50433,17,17,https://market-final-project.binaracademy.org/seller/product,14576,0,0
+1699582749647,3828,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-10,text,false,,334,408,17,17,https://market-final-project.binaracademy.org/auth/register,3828,0,0
+1699582749665,3843,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-17,text,false,,345,262,17,17,https://market-final-project.binaracademy.org/auth/login,3843,0,0
+1699582749664,3844,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-12,text,false,,334,408,17,17,https://market-final-project.binaracademy.org/auth/register,3844,0,0
+1699582532611,223632,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-2,text,true,,22130925,201,17,17,https://market-final-project.binaracademy.org/buyer/product/,22050,0,0
+1699582742360,13975,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,265,17,17,https://market-final-project.binaracademy.org/buyer/order,13975,0,9555
+1699582742702,13967,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,265,16,16,https://market-final-project.binaracademy.org/buyer/order,13967,0,9820
+1699582753509,3351,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-12,text,false,,345,262,16,16,https://market-final-project.binaracademy.org/auth/login,3351,0,0
+1699582753476,3384,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-10,text,false,,345,262,16,16,https://market-final-project.binaracademy.org/auth/login,3384,0,0
+1699582756336,2934,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,198,16,16,https://market-final-project.binaracademy.org/buyer/order,2934,0,0
+1699582756670,2969,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,198,16,16,https://market-final-project.binaracademy.org/buyer/order,2969,0,0
+1699582715746,44953,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-13,text,false,,344,50431,16,16,https://market-final-project.binaracademy.org/seller/product,44953,0,26639
+1699582751949,10632,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,201,16,16,https://market-final-project.binaracademy.org/seller/product,10632,0,7263
+1699582759271,3524,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,199,16,16,https://market-final-project.binaracademy.org/buyer/order/,3524,0,0
+1699582759640,4370,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,199,16,16,https://market-final-project.binaracademy.org/buyer/order/,4370,0,0
+1699582749646,14840,POST Seller Re-Add Product,403,Forbidden,Thread Group 20-1-10 1-15,text,false,,344,50367,16,16,https://market-final-project.binaracademy.org/seller/product,14840,0,0
+1699582753070,11446,GET Seller List Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,201,16,16,https://market-final-project.binaracademy.org/seller/product,11446,0,6880
+1699582760699,5097,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-13,text,false,,334,405,16,16,https://market-final-project.binaracademy.org/auth/register,5097,0,0
+1699582642707,124499,GET Buyer Get Product,200,OK,Thread Group 20-1-10 1-9,text,true,,22131861,201,16,16,https://market-final-project.binaracademy.org/buyer/product/,12991,0,0
+1699582762581,4748,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,202,16,16,https://market-final-project.binaracademy.org/seller/product/,4748,0,0
+1699582762795,4991,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-5,text,false,,344,243,16,16,https://market-final-project.binaracademy.org/buyer/order/,4991,0,0
+1699582767787,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-5,text,true,,545,0,16,16,null,0,0,0
+1699582764011,5007,PUT Buyer Update Offer,403,Forbidden,Thread Group 20-1-10 1-18,text,false,,344,243,16,16,https://market-final-project.binaracademy.org/buyer/order/,5007,0,0
+1699582769018,0,Debug Sampler,200,OK,Thread Group 20-1-10 1-18,text,true,,546,0,16,16,null,0,0,0
+1699582764487,5176,POST Buyer Auth Register,400,Bad Request,Thread Group 20-1-10 1-15,text,false,,334,405,16,16,https://market-final-project.binaracademy.org/auth/register,5176,0,0
+1699582764516,5192,GET Seller Get Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,202,16,16,https://market-final-project.binaracademy.org/seller/product/,5192,0,0
+1699582765796,4968,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-13,text,false,,345,260,16,16,https://market-final-project.binaracademy.org/auth/login,4968,0,0
+1699582767329,3884,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-8,text,false,,344,224,16,16,https://market-final-project.binaracademy.org/seller/product/,3884,0,0
+1699582767787,3765,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-5,text,false,,334,408,16,16,https://market-final-project.binaracademy.org/auth/register,3765,0,0
+1699582753509,19274,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-17,text,false,,344,50417,16,16,https://market-final-project.binaracademy.org/seller/product,19274,0,0
+1699582769018,3908,POST Seller Auth Register,400,Bad Request,Thread Group 20-1-10 1-18,text,false,,334,408,16,16,https://market-final-project.binaracademy.org/auth/register,3908,0,0
+1699582769663,3651,POST Buyer Sign In,401,Unauthorized,Thread Group 20-1-10 1-15,text,false,,345,260,16,16,https://market-final-project.binaracademy.org/auth/login,3651,0,0
+1699582769708,3607,DELETE Seller Delete Product,403,Forbidden,Thread Group 20-1-10 1-16,text,false,,344,224,16,16,https://market-final-project.binaracademy.org/seller/product/,3607,0,0
+1699582756243,17073,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,265,16,16,https://market-final-project.binaracademy.org/buyer/order,17073,0,13510
+1699582770764,3659,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-13,text,true,,1535,219,16,16,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,3659,0,0
+1699582771552,4619,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-5,text,false,,345,262,16,16,https://market-final-project.binaracademy.org/auth/login,4619,0,0
+1699582756861,20720,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-12,text,false,,344,50369,16,16,https://market-final-project.binaracademy.org/seller/product,20720,0,0
+1699582772927,4654,POST Seller Sign In,401,Unauthorized,Thread Group 20-1-10 1-18,text,false,,345,262,16,16,https://market-final-project.binaracademy.org/auth/login,4654,0,0
+1699582756861,20783,POST Seller Add Product,403,Forbidden,Thread Group 20-1-10 1-10,text,false,,344,50425,16,16,https://market-final-project.binaracademy.org/seller/product,20783,0,0
+1699582773316,4743,GET Buyer List Orders,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,198,16,16,https://market-final-project.binaracademy.org/buyer/order,4743,0,0
+1699582773314,4918,GET Buyer List Product,200,OK,Thread Group 20-1-10 1-15,text,true,,1535,219,16,16,https://market-final-project.binaracademy.org/buyer/product?page=1&per_page=10,4918,0,0
+1699582767207,16374,POST Buyer Create Order,403,Forbidden,Thread Group 20-1-10 1-9,text,false,,344,265,16,16,https://market-final-project.binaracademy.org/buyer/order,16374,0,7893
+1699582778058,5522,GET Buyer Get Order,403,Forbidden,Thread Group 20-1-10 1-2,text,false,,344,199,16,16,https://market-final-project.binaracademy.org/buyer/order/,5522,0,0
+1699582778232,8588,GET Buyer Get Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-15,text,false,,3174,0,16,16,https://market-final-project.binaracademy.org/buyer/product/,0,0,0
+1699582774422,12398,GET Buyer Get Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-13,text,false,,3414,0,16,16,https://market-final-project.binaracademy.org/buyer/product/,0,0,0
+1699582772783,14038,GET Seller List Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-17,text,false,,3347,0,16,16,https://market-final-project.binaracademy.org/seller/product,0,0,14038
+1699582776170,10650,POST Seller Add Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-5,text,false,,3174,0,16,16,https://market-final-project.binaracademy.org/seller/product,0,0,0
+1699582771213,15608,POST Seller Re-Add Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-8,text,false,,3174,0,16,16,https://market-final-project.binaracademy.org/seller/product,0,0,0
+1699582711127,75698,GET Buyer Get Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-4,text,false,,2504,0,11,11,https://market-final-project.binaracademy.org/buyer/product/,27372,0,0
+1699582742248,44578,GET Buyer Get Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-3,text,false,,2504,0,10,10,https://market-final-project.binaracademy.org/buyer/product/,10743,0,0
+1699582777580,9247,POST Seller Add Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-18,text,false,,3174,0,10,10,https://market-final-project.binaracademy.org/seller/product,0,0,0
+1699582705586,81246,GET Buyer Get Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-7,text,false,,2504,0,8,8,https://market-final-project.binaracademy.org/buyer/product/,32908,0,0
+1699582710934,75900,GET Buyer Get Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-6,text,false,,2504,0,8,8,https://market-final-project.binaracademy.org/buyer/product/,27563,0,0
+1699582773315,13522,POST Seller Re-Add Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-16,text,false,,3174,0,6,6,https://market-final-project.binaracademy.org/seller/product,0,0,0
+1699582783580,3257,PUT Buyer Update Offer,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-2,text,false,,3174,0,5,5,https://market-final-project.binaracademy.org/buyer/order/,0,0,0
+1699582777580,9258,GET Seller List Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-12,text,false,,3246,0,4,4,https://market-final-project.binaracademy.org/seller/product,0,0,9258
+1699582783580,3258,GET Buyer List Orders,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-9,text,false,,3174,0,3,3,https://market-final-project.binaracademy.org/buyer/order,0,0,0
+1699582591852,194988,GET Buyer Get Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-14,text,false,,2504,0,2,2,https://market-final-project.binaracademy.org/buyer/product/,31449,0,0
+1699582777643,9197,GET Seller List Product,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Thread Group 20-1-10 1-10,text,false,,3246,0,2,2,https://market-final-project.binaracademy.org/seller/product,0,0,9197
