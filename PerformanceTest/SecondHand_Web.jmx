@@ -19,7 +19,7 @@
         </collectionProp>
       </HeaderManager>
       <hashTree/>
-      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="false">
         <collectionProp name="CookieManager.cookies"/>
         <boolProp name="CookieManager.clearEachIteration">false</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
@@ -70,7 +70,13 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Register" enabled="true">
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+          <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Register" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -79,7 +85,7 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;user&quot;: {&#xd;
     &quot;name&quot;: &quot;Budi Anduk&quot;,&#xd;
-    &quot;email&quot;: &quot;budybudy0004@hellyea.com&quot;,&#xd;
+    &quot;email&quot;: &quot;budybudy0008@hellyea.com&quot;,&#xd;
     &quot;password&quot;: &quot;${userPassword}&quot;&#xd;
   }&#xd;
 }</stringProp>
@@ -118,7 +124,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;user&quot;: {&#xd;
-    &quot;email&quot;: &quot;${userEmail}&quot;&#xd;
+    &quot;email&quot;: &quot;budybudy0008@hellyea.com&quot;,//&quot;${userEmail}&quot;&#xd;
     &quot;password&quot;: &quot;${userPassword}&quot;&#xd;
   }&#xd;
 }</stringProp>
@@ -599,7 +605,7 @@
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Buyer Register" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Buyer Register" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -608,7 +614,7 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;user&quot;: {&#xd;
     &quot;name&quot;: &quot;Rudi Kipas&quot;,&#xd;
-    &quot;email&quot;: &quot;rudyrudy0004@hellyea.com&quot;,&#xd;
+    &quot;email&quot;: &quot;rudyrudy0008@hellyea.com&quot;,&#xd;
     &quot;password&quot;: &quot;${userPassword}&quot;&#xd;
   }&#xd;
 }</stringProp>
@@ -647,7 +653,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;user&quot;: {&#xd;
-    &quot;email&quot;: &quot;${buyerEmail}&quot;&#xd;
+    &quot;email&quot;: &quot;rudyrudy0008@hellyea.com&quot;,//&quot;${buyerEmail}&quot;&#xd;
     &quot;password&quot;: &quot;${userPassword}&quot;&#xd;
   }&#xd;
 }</stringProp>
@@ -781,8 +787,8 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;offer&quot;: {&#xd;
     &quot;price&quot;: &quot;1000&quot;,&#xd;
-    &quot;to_id&quot;: &quot;${sellerId}&quot;,&#xd;
-    &quot;product_id&quot;: &quot;${prodId}&quot;&#xd;
+    &quot;to_id&quot;: 87479,&#xd;
+    &quot;product_id&quot;: 51550&#xd;
   }&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -804,7 +810,14 @@
           <boolProp name="HTTPSampler.md5">false</boolProp>
           <intProp name="HTTPSampler.ipSourceType">0</intProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="OfferID Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">offerId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.offer.id</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET List Offers" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -812,7 +825,7 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${base_url}</stringProp>
           <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
-          <stringProp name="HTTPSampler.path">/users/${sellerId}/offers.json</stringProp>
+          <stringProp name="HTTPSampler.path">/users/87479/offers.json</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -972,7 +985,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\MHP\Training\Binar Academy Quality Assurance\23001026_15_Pra_Challenge_Gold\PerformanceTest\Report\SecHandWeb_1-1-1.jtl</stringProp>
+          <stringProp name="filename">C:\MHP\Training\Binar Academy Quality Assurance\23001026_15_Pra_Challenge_Gold\PerformanceTest\Report\SecHandWeb_1-1-1-.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -991,7 +1004,13 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Register" enabled="true">
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+          <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Register" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1000,7 +1019,7 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;user&quot;: {&#xd;
     &quot;name&quot;: &quot;Budi Anduk&quot;,&#xd;
-    &quot;email&quot;: &quot;budybudy0005@hellyea.com&quot;,&#xd;
+    &quot;email&quot;: &quot;budybudy0009@hellyea.com&quot;,&#xd;
     &quot;password&quot;: &quot;${userPassword}&quot;&#xd;
   }&#xd;
 }</stringProp>
@@ -1039,7 +1058,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;user&quot;: {&#xd;
-    &quot;email&quot;: &quot;${userEmail}&quot;&#xd;
+    &quot;email&quot;: &quot;budybudy0008@hellyea.com&quot;,//&quot;${userEmail}&quot;&#xd;
     &quot;password&quot;: &quot;${userPassword}&quot;&#xd;
   }&#xd;
 }</stringProp>
@@ -1520,7 +1539,7 @@
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Buyer Register" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST Buyer Register" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1529,7 +1548,7 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;user&quot;: {&#xd;
     &quot;name&quot;: &quot;Rudi Kipas&quot;,&#xd;
-    &quot;email&quot;: &quot;rudyrudy0005@hellyea.com&quot;,&#xd;
+    &quot;email&quot;: &quot;rudyrudy0009@hellyea.com&quot;,&#xd;
     &quot;password&quot;: &quot;${userPassword}&quot;&#xd;
   }&#xd;
 }</stringProp>
@@ -1568,7 +1587,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;user&quot;: {&#xd;
-    &quot;email&quot;: &quot;${buyerEmail}&quot;&#xd;
+    &quot;email&quot;: &quot;rudyrudy0008@hellyea.com&quot;,//&quot;${buyerEmail}&quot;&#xd;
     &quot;password&quot;: &quot;${userPassword}&quot;&#xd;
   }&#xd;
 }</stringProp>
@@ -1702,8 +1721,8 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;offer&quot;: {&#xd;
     &quot;price&quot;: &quot;1000&quot;,&#xd;
-    &quot;to_id&quot;: &quot;${sellerId}&quot;,&#xd;
-    &quot;product_id&quot;: &quot;${prodId}&quot;&#xd;
+    &quot;to_id&quot;: 87479,&#xd;
+    &quot;product_id&quot;: 51550&#xd;
   }&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -1725,7 +1744,14 @@
           <boolProp name="HTTPSampler.md5">false</boolProp>
           <intProp name="HTTPSampler.ipSourceType">0</intProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="OfferID Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">offerId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.offer.id</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET List Offers" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -1733,7 +1759,7 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${base_url}</stringProp>
           <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
-          <stringProp name="HTTPSampler.path">/users/${sellerId}/offers.json</stringProp>
+          <stringProp name="HTTPSampler.path">/users/87479/offers.json</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1893,7 +1919,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\MHP\Training\Binar Academy Quality Assurance\23001026_15_Pra_Challenge_Gold\PerformanceTest\Report\SecHandWeb_20-1-10.jtl</stringProp>
+          <stringProp name="filename">C:\MHP\Training\Binar Academy Quality Assurance\23001026_15_Pra_Challenge_Gold\PerformanceTest\Report\SecHandWeb_20-1-10-.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>

@@ -1,22 +1,18 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1699580719653,555,POST Register,200,OK,Thread Group 1-1-1 1-1,text,true,,1761,310,1,1,https://secondhand.binaracademy.org/users.json,555,0,219
-1699580720224,63,POST Sign In,200,OK,Thread Group 1-1-1 1-1,text,true,,1759,764,1,1,https://secondhand.binaracademy.org/users/sign_in.json,63,0,0
-1699580720287,1219,PUT Update Profile,200,OK,Thread Group 1-1-1 1-1,text,true,,1492,50721,1,1,https://secondhand.binaracademy.org/profiles.json,1219,0,0
-1699580721509,63,GET Get Profile,200,OK,Thread Group 1-1-1 1-1,text,true,,1490,641,1,1,https://secondhand.binaracademy.org/profiles.json,63,0,0
-1699580721574,74,GET List Categories,200,OK,Thread Group 1-1-1 1-1,text,true,,1070,641,1,1,https://secondhand.binaracademy.org/categories.json,74,0,0
-1699580721649,58,GET Category,200,OK,Thread Group 1-1-1 1-1,text,true,,729,643,1,1,https://secondhand.binaracademy.org/categories/1.json,58,0,0
-1699580721708,83,POST Create Product,201,Created,Thread Group 1-1-1 1-1,text,true,,1830,824,1,1,https://secondhand.binaracademy.org/products.json,83,0,0
-1699580721793,215,Get List Product,200,OK,Thread Group 1-1-1 1-1,text,true,,1248,674,1,1,https://secondhand.binaracademy.org/products.json?page=1&category_id=2&user_id=87727,215,0,0
-1699580722009,257,Get Product,200,OK,Thread Group 1-1-1 1-1,text,true,,1767,645,1,1,https://secondhand.binaracademy.org/products/51848.json,257,0,0
-1699580722267,134,PUT Update Product,200,OK,Thread Group 1-1-1 1-1,text,true,,1829,866,1,1,https://secondhand.binaracademy.org/products/51848.json,134,0,0
-1699580722402,114,DELETE Delete Product,204,No Content,Thread Group 1-1-1 1-1,,true,,1009,665,1,1,https://secondhand.binaracademy.org/products/51848.json,0,0,0
-1699580722518,74,POST Recreate Product,201,Created,Thread Group 1-1-1 1-1,text,true,,1842,830,1,1,https://secondhand.binaracademy.org/products.json,74,0,0
-1699580722593,336,POST Buyer Register,200,OK,Thread Group 1-1-1 1-1,text,true,,1743,791,1,1,https://secondhand.binaracademy.org/users.json,336,0,0
-1699580722929,52,POST Buyer Sign In,200,OK,Thread Group 1-1-1 1-1,text,true,,1759,746,1,1,https://secondhand.binaracademy.org/users/sign_in.json,52,0,0
-1699580722982,1057,PUT Buyer Update Profile,200,OK,Thread Group 1-1-1 1-1,text,true,,1492,50733,1,1,https://secondhand.binaracademy.org/profiles.json,1057,0,0
-1699580724040,71,GET Get Product,200,OK,Thread Group 1-1-1 1-1,text,true,,1755,649,1,1,https://secondhand.binaracademy.org/products/51849.json,70,0,0
-1699580724111,283,POST Create Offer,200,OK,Thread Group 1-1-1 1-1,text,true,,19213,1375,1,1,https://secondhand.binaracademy.org/,56,0,0
-1699580724111,56,POST Create Offer-0,302,Found,Thread Group 1-1-1 1-1,text,true,,1221,749,1,1,https://secondhand.binaracademy.org/offers.json,56,0,0
-1699580724169,225,POST Create Offer-1,200,OK,Thread Group 1-1-1 1-1,text,true,,17992,626,1,1,https://secondhand.binaracademy.org/,225,0,0
-1699580724395,60,GET List Offers,200,OK,Thread Group 1-1-1 1-1,text,true,,1364,753,1,1,https://secondhand.binaracademy.org/users/87727/offers.json,60,0,0
-1699580724456,0,PUT Update Offer,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 44: https://secondhand.binaracademy.org/offers/${offerId}.json,Thread Group 1-1-1 1-1,text,false,,1210,0,1,1,https://secondhand.binaracademy.org/offers/${offerId}.json,0,0,0
+1699626089333,1830,POST Sign In,200,OK,Thread Group 1-1-1 1-1,text,true,,1975,307,1,1,https://secondhand.binaracademy.org/users/sign_in.json,1829,0,101
+1699626091165,1116,PUT Update Profile,200,OK,Thread Group 1-1-1 1-1,text,true,,1484,50705,1,1,https://secondhand.binaracademy.org/profiles.json,1116,0,0
+1699626092281,25,GET Get Profile,200,OK,Thread Group 1-1-1 1-1,text,true,,1482,633,1,1,https://secondhand.binaracademy.org/profiles.json,25,0,0
+1699626092306,15,GET List Categories,200,OK,Thread Group 1-1-1 1-1,text,true,,1070,633,1,1,https://secondhand.binaracademy.org/categories.json,15,0,0
+1699626092321,17,GET Category,200,OK,Thread Group 1-1-1 1-1,text,true,,729,635,1,1,https://secondhand.binaracademy.org/categories/1.json,16,0,0
+1699626092338,39,POST Create Product,201,Created,Thread Group 1-1-1 1-1,text,true,,1828,816,1,1,https://secondhand.binaracademy.org/products.json,39,0,0
+1699626092378,27,Get List Product,200,OK,Thread Group 1-1-1 1-1,text,true,,1256,672,1,1,https://secondhand.binaracademy.org/products.json?page=1&category_id=2&user_id=87799,27,0,0
+1699626092406,40,Get Product,200,OK,Thread Group 1-1-1 1-1,text,true,,1763,653,1,1,https://secondhand.binaracademy.org/products/52119.json,40,0,0
+1699626092447,56,PUT Update Product,200,OK,Thread Group 1-1-1 1-1,text,true,,1827,862,1,1,https://secondhand.binaracademy.org/products/52119.json,56,0,0
+1699626092504,28,DELETE Delete Product,204,No Content,Thread Group 1-1-1 1-1,,true,,993,663,1,1,https://secondhand.binaracademy.org/products/52119.json,0,0,0
+1699626092533,54,POST Recreate Product,201,Created,Thread Group 1-1-1 1-1,text,true,,1826,814,1,1,https://secondhand.binaracademy.org/products.json,54,0,0
+1699626092588,68,POST Buyer Sign In,200,OK,Thread Group 1-1-1 1-1,text,true,,1991,773,1,1,https://secondhand.binaracademy.org/users/sign_in.json,68,0,0
+1699626092657,983,PUT Buyer Update Profile,200,OK,Thread Group 1-1-1 1-1,text,true,,1486,50698,1,1,https://secondhand.binaracademy.org/profiles.json,983,0,0
+1699626093641,38,GET Get Product,200,OK,Thread Group 1-1-1 1-1,text,true,,1747,643,1,1,https://secondhand.binaracademy.org/products/52120.json,38,0,0
+1699626093679,56,POST Create Offer,201,Created,Thread Group 1-1-1 1-1,text,true,,2666,739,1,1,https://secondhand.binaracademy.org/offers.json,56,0,0
+1699626093736,51,GET List Offers,200,OK,Thread Group 1-1-1 1-1,text,true,,1240,639,1,1,https://secondhand.binaracademy.org/users/87479/offers.json,51,0,0
+1699626093787,31,PUT Update Offer,500,Internal Server Error,Thread Group 1-1-1 1-1,text,false,,385,706,1,1,https://secondhand.binaracademy.org/offers/41107.json,31,0,0
